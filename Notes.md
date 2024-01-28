@@ -1,3 +1,80 @@
+# Release 2024.01.22.A
+## Bug Fixes
+* Current Guides menu now open in center of screen
+* Libraries Updated: Ace3, LibDBIcon, LibPetJournal, LibSharedMedia
+* Professions category in Guides Menu for non-retail versions
+* Spoony when OCD with look and feel on the Config panels, so much nicer
+## Guide Updates
+* 20 Leveling guide tweaks, including Reclaiming Gilneas
+* 12 WorldEvent guide tweaks
+
+# Release 2024.01.17.A
+## Bug Fixes
+* Config panel completely reworked
+* Current Guides is now a menu not a panel
+* Window Position reworked
+* Update Retail Interface to 100205
+* About 500 lines of code reworked, again, many other bug fixes!
+## Guide Updates
+* Complete re-org, can say what changed, 291 guides or so
+* Many things changed and by the next release, *everything* will have been touched
+* New Reclaiming Gilneas Guide
+
+# Release 2023.11.15.B
+## Bug Fixes
+* Fixed  NOTAUTO for QUEST_DETAIL_PUNTED NPCs
+* Update Vanilla Interface to 11500
+## Guide Updates
+### Retail
+* Leveling/Alliance: Borean Tundra, Dragonblight
+* Leveling/Neutral: Call of the Dream, Misfit Dragons
+### WotLK
+* Leveling/Alliance: Bloodmyst Isle
+
+
+# Release 2023.11.08.B
+## Bug Fixes
+* Zone Name updates for 10.2.0
+* Retail interface stepped to 100200
+* Misfit Dragons guide was not Neutral
+## Guide Updates
+### Retail
+* Achievements: Call of the Dream Glyphs,
+* Leveling/Alliance: Exiles Reach Intro
+* Leveling/Horde: BFA Intro, Chromie Time, Exiles Reach
+* Leveling/Neutral: Azure Span, Call of the Dream, DF Campaign, Misfit Dragons, Thaldraszus, The Coalition of Flames, SL Maw Intro
+* WorldEvents/Alliance: Hallows End
+### WotLK
+* Leveling/Alliance: Intro Human
+### Classic
+* Leveling/Alliance: Intro Human, Teldrassil 1-12, Darkshore 12-20, Eastern Kingdom 12-20
+
+
+# Release 2023.10.11.A
+## Bug Fixes
+* Empty Guide text updated to help folks get started easier
+* Wrath interface stepped from 30402 to 30403
+## Guide Updates
+### Retail
+* Achievements:A Blue Dawn, Nelf Heritage Armor
+* Leveling/Neutral: Thaldraszus, Waking Shores,
+### WotLK
+* Leveling/Alliance: Intro Dwarf/Gnome, Intro Human
+### Classic
+* Leveling/Alliance: Intro Dwarf/Gnome, Intro Human, Intro Nelf, Eastern Kingdom 12-20
+
+# Release 2023.09.14.A
+## Bug Fixes
+* No bug fixes!
+## Guide Updates
+### Retail
+* Achievements:A Blue Dawn, Nelf Heritage Armor
+* Leveling/Neutral: Shandris Feathermoon Questline, The Coalition of Flames
+### WotLK
+* Leveling/Alliance: Intro Human, Intro Dwarf/Gnome
+### Classic
+* Leveling/Alliance: 01-12 Dun Morogh
+
 # Release 2023.09.06.A
 ## Bug Fixes
 * Cagomei: Updated DF Zone data
@@ -8,7 +85,7 @@
 ### Retail
 * Leveling/Alliance: BFA Intro, Exiles Reach
 * Leveling/Horde: BFA Intro, Exiles Reach, Forsaken Intro,
-* Neutral Leveling: Onaharen Plains, Shandris_Feathermoon_Questline
+* Neutral Leveling: Onaharen Plains, Shandris Feathermoon Questline
 ### WotLK
 * Many guides were updated to remove outdate hearthstone references
 * Leveling/Alliance: Intro Human, Intro Dwarf/Gnome, Darkshore, Teldrassil

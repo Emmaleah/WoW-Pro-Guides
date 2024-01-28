@@ -96,7 +96,7 @@ C Tending the Forge|QID|66523|QO|1|M|47.77,37.98|Z|2024|N|Kill and loot some of 
 K Frigellus|ACTIVE|66488|QO|1|M|47.77,37.98|Z|2024|N|Slay Frigellus.|T|Frigellus|
 K Frostfist|ACTIVE|66957|QO|1|M|49.04,36.48|Z|2024|N|Kill and loot Frostfist, He is on the ice flow, fly up and North of Camp Antonidas.|T|Frostfist|
 C Tending the Forge|QID|66523|QO|1|M|48.04,38.38|Z|2024|N|Finish collecting the frozen cores.|US|
-T WANTED: Frigellus|QID|66488|M|45.99,38.31|Z|2024|N|To Custodian Cynegos.|RANK|2|
+T WANTED: Frigellus|QID|66488|M|45.99,38.31|Z|2024|N|To Custodian Cynegos.|
 A Setting the Defense|QID|66489|PRE|66488|M|46.00,38.41|Z|2024|N|From Arch Enchanter Celeste.|RANK|2|
 C Setting the Defense|QID|66489|M|46.20,38.84|Z|2024|U|192471|N|Target the Azure Defenders, then use the wand to empower them.|T|Azure Defender|
 T Setting the Defense|QID|66489|M|46.00,38.41|Z|2024|N|To Arch Enchanter Celeste.|
@@ -618,7 +618,7 @@ K Stormshackler Rynea|ACTIVE|66556|M|65.95,10.74|Z|2024|QO|2|N|Kill Stormshackle
 K Frostjaw|ACTIVE|66971|QO|1|M|70.22,17.56|Z|2024|N|Kill Frostjaw.|T|Frostjaw|
 T Ice Cave Ya Got There|QID|66556|M|65.38,15.94|Z|2024|N|To Sonova Snowden.|
 
-R Rhonin's Shield|AVAILABLE|71235|M|65.81,25.32|Z|2024|N|Head back to Rhonin's Shield for one more quest chain that wasn't available earlier.|;moved because bliz made the lead in quest dependant on rescuing Old Grimtusk
+R Rhonin's Shield|AVAILABLE|71235|M|65.81,25.32|Z|2024|N|Head back to Rhonin's Shield for one more quest chain that wasn't available earlier.|RANK|2|;moved because bliz made the lead in quest dependant on rescuing Old Grimtusk
 A Field Mages|QID|71235|PRE|66709|M|65.81,25.32|Z|2024|N|From Drok Scrollstabber.|RANK|2|LEAD|68639^68641|
 T Field Mages|QID|71235|M|63.58,28.90|Z|2024|N|To Callisto Windsor.|
 A Prowling Polar Predators|QID|68639|M|63.58,28.90|Z|2024|N|From Callisto Windsor.|RANK|2|
@@ -698,7 +698,7 @@ T M.E.T.A.|QID|66267|M|22.73,41.67|Z|2024;The Azure Span|N|To Detry Hornswald.|
 A Third Try's the Charm|QID|66268|PRE|66265&66266&66267|M|22.73,41.67|Z|2024;The Azure Span|N|From Detry Hornswald.|
 A Just To Be Sure|QID|66269|PRE|66265&66266&66267|M|22.73,41.67|Z|2024;The Azure Span|N|From Detry Hornswald.|
 C Just To Be Sure|QID|66269|M|22.56,42.88|Z|2024;The Azure Span|N|Kill Stormfang elementalists as you head to Bloodclaw.|S|
-K Bloodclaw|QID|66268|M|22.22,43.77|Z|2024;The Azure Span|QO|1|N|Kill Bloodclaw.|T|Bloodclaw|
+K Bloodclaw|ACTIVE|66268|M|22.22,43.77|Z|2024;The Azure Span|QO|1|N|Kill Bloodclaw.|T|Bloodclaw|
 C Just To Be Sure|QID|66269|M|22.56,42.88|Z|2024;The Azure Span|N|Finish off the Stormfang elementalists.|US|
 T Third Try's the Charm|QID|66268|M|22.73,41.65|Z|2024;The Azure Span|N|To Detry Hornswald.|
 T Just To Be Sure|QID|66269|M|22.73,41.65|Z|2024;The Azure Span|N|To Detry Hornswald.|
@@ -771,7 +771,7 @@ R Hudson's Rock|ACTIVE|70166|M|7.86,53.48|Z|2024|N|To visit Hudson and get a dun
 T The Joy of Painting|QID|70166|M|7.86,53.48|Z|2024|N|To Hudson.|RANK|3|
 A Sad Little Accidents|QID|70168|PRE|70166|M|7.87,53.47|Z|2024|N|Wait a moment for this to become available from Ranpiata. The actual doing of this quest is not in this guide as it requires dungeons. (Paintings drop from bosses in the 3 dungeons named.)|RANK|2|
 
-H Azure Arcives|ACTIVE|71000|M|PLAYER|N|Shorten your flight by hearthing halfway there.|TZ|The Conjured Biscuit Inn|RANK|2|
+H Azure Archives|ACTIVE|71000|M|PLAYER|N|Shorten your flight by hearthing halfway there.|TZ|The Conjured Biscuit Inn|RANK|2|
 R Shiverweb Vale|AVAILABLE|65750|M|51.71,61.97|Z|2024|EAB|N|Remember the Extra Action Button at the base of the Azure Archives Rings, if you use that you will get some height, for you trip to Shiverweb Vale.|RANK|3|
 A Eight-Legged Menace|QID|65750|M|51.73,61.98|Z|2024;The Azure Span|N|From Lilial Dawnburst.|RANK|3|
 A Icy Webs|QID|65769|M|51.73,61.98|Z|2024;The Azure Span|N|From Lilial Dawnburst.|RANK|3|

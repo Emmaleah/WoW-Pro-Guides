@@ -330,12 +330,12 @@ function WoWPro:AutoCompleteQuestUpdate(questComplete)
     for i=1,#WoWPro.action do
         local action = WoWPro.action[i]
         local completion = WoWProCharDB.Guide[GID].completion[i]
-        if WoWPro.QID[i] then
+        if WoWPro.QID[i] and WoWPro.QID[i] ~= "*" then
             local numQIDs = select("#", ("^&"):split(WoWPro.QID[i]))
             for j=1,numQIDs do
                 local QID = select(numQIDs-j+1, ("^&"):split(WoWPro.QID[i]))
                 if not tonumber(QID) then
-                    WoWPro:Error("Bad QID [%s] in Guide %s", WoWPro.QID[i], GID)
+                    WoWPro:Error("Bad QID [%s] in Guide %s, step [%s %s]", WoWPro.QID[i], GID, action, WoWPro.step[i])
                     return
                 end
                 QID = tonumber(QID)
@@ -994,7 +994,9 @@ function WoWPro.QUEST_DETAIL_PUNTED(event, ...)
         end
     end
 
-    if (WoWPro.action[qidx] == "A") and (questtitle == WoWPro.step[qidx] or WoWPro.QID[qidx] == "*" or WoWPro:QIDsInTable(WoWPro.QID[qidx],WoWPro.QuestLog)) then
+    if (WoWPro.action[qidx] == "A") and (not WoWPro.noauto[qidx]) and
+       ((questtitle == WoWPro.step[qidx]) or
+         WoWPro.QID[qidx] == "*" or WoWPro:QIDsInTable(WoWPro.QID[qidx],WoWPro.QuestLog)) then
         WoWPro:dbp("Accepted %d: %s [%s], QID %s",qidx, event, questtitle,tostring(WoWPro.QID[qidx]))
         if  WoWPro.QID[qidx] == "*" then
             if WoWPro.NPC[qidx] and tonumber(WoWPro.NPC[qidx]) == myNPC then
@@ -1050,7 +1052,7 @@ WoWPro.RegisterEventHandler("QUEST_COMPLETE", function(event, ...)
     -- Some quests are auto-turnin on accept
     if WoWProCharDB.AutoAccept == true and
        WoWPro.action[qidx] == "A" and
-       questtitle == WoWPro.step[qidx] and not WoWPro.noauto[qidx] then
+       questtitle == WoWPro.step[qidx] and (not WoWPro.noauto[qidx]) then
         if (_G.GetNumQuestChoices() <= 1) then
             _G.GetQuestReward(1)
         end

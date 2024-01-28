@@ -9,7 +9,7 @@ WoWPro:GuideRaceSpecific(guide,"Gnome")
 WoWPro:GuideSteps(guide, function()
 return
 [[
-N It's Chromie Time!|QID|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|LVL|-60|S!US|N|Congratulations on hitting level 10.\n\nYou can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in.\n\nYou're free to continue your current guide or you click the guide button next to this frame to direct you to Chromie!|CT|
+N It's Chromie Time!|QID|62567|M|62.25,29.93|Z|84;Stormwind City|JUMP|Chromie Time|LVL|-60|S!US|N|Congratulations on hitting level 10.\n\nYou can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in.\n\nYou're free to continue your current guide or you click the guide button next to this frame to direct you to Chromie!|CT|
 A Pinned Down|QID|27670|M|34.10,32.22|Z|The Old Dormitory|N|From Nevin Twistwrench standing in front of you.|
 C Pinned Down|QID|27670|M|40.39,32.03|Z|The Old Dormitory|N|Kill 6 Crazed Leper Gnomes.|
 T Pinned Down|QID|27670|M|34.10,32.22|Z|The Old Dormitory|N|To Nevin Twistwrench|
@@ -107,6 +107,6 @@ C Down with Crushcog! - Orbital Targeting Device|QID|26364|M|58.81,43.61|Z|469|N
 r Sell and Repair|M|49.67,51.92|QID|26364|Z|469|N|Take this opportunity to sell junk and repair with Burdrak Harglhelm.|ACTIVE|26364|T|Burdrak Harglhelm|S|
 T Down with Crushcog!|QID|26364|M|48.75,52.90|Z|469|N|To Jarvi Shadowstep|
 A On to Kharanos|PRE|26364|QID|26373|LEAD|25724|M|48.75,52.90|Z|469|N|From Jarvi Shadowstep.|
-A Bound for Kharanos|QID|26380|M|49.91,44.98|Z|Dun Morogh|N|From Ciara Deepstone, on the road east towards Kharanos.|
+A Bound for Kharanos|QID|26380|M|49.91,44.98|Z|27;Dun Morogh|N|From Ciara Deepstone, on the road east towards Kharanos.|
 ]]
 end)

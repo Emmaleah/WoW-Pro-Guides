@@ -189,10 +189,10 @@ A United As One|QID|43397|M|51.58,47.77|N|From Alonsus Faol.|PRE|43395^43396|
 P Dalaran|QID|43397|M|49.72,80.67|N|Take the portal to Dalaran.|ACTIVE|43397|
 R Chamber of the Guardian|QID|43397|M|49.49,47.32|Z|Dalaran!Dalaran!Dungeon|N|Run to the Chamber of the Guardian, and step on the teleport pad.|ACTIVE|43397|
 P Dalaran Crater|QID|43397|M|28.77,77.36|Z|Aegwynn's Gallery@Dalaran70|N|Take the Dalaran portal to Dalaran Crater. Cast Lev (or don't your choice.)|ACTIVE|43397|
-R Light's Hope Chapel|QID|43397|M|75.75,52.22|Z|Eastern Plaguelands|N|Fly to Light's Hope Chapel in Eastern Plaguelands. Once you arrive, click on the floor in the middle of the chapel to enter the Paladin order hall.|ACTIVE|43397|
-C United As One|QID|43397|QO|2|M|50.45,74.33|Z|Light's Hope Chapel|CHAT|N|Continue down the stairs to find and talk to Lady Liadrin. Then, wait a minute or so for the war council to finish discussing.|
-T United As One|QID|43397|M|50.45,74.33|Z|Light's Hope Chapel|N|To Lady Liadrin.|
-A Aiding the Conclave|QID|43797|M|50.45,74.33|Z|Light's Hope Chapel|N|From Lady Liadrin.|PRE|43397|
+R Light's Hope Chapel|QID|43397|M|75.75,52.22|Z|23;Eastern Plaguelands|N|Fly to Light's Hope Chapel in Eastern Plaguelands. Once you arrive, click on the floor in the middle of the chapel to enter the Paladin order hall.|ACTIVE|43397|
+C United As One|QID|43397|QO|2|M|50.45,74.33|Z|24;Light's Hope Chapel|CHAT|N|Continue down the stairs to find and talk to Lady Liadrin. Then, wait a minute or so for the war council to finish discussing.|
+T United As One|QID|43397|M|50.45,74.33|Z|24;Light's Hope Chapel|N|To Lady Liadrin.|
+A Aiding the Conclave|QID|43797|M|50.45,74.33|Z|24;Light's Hope Chapel|N|From Lady Liadrin.|PRE|43397|
 T Aiding the Conclave|QID|43797|M|51.58,47.77|N|From Alonsus Faol.|
 A Elixirs of Aid|QID|43832|M|51.58,47.77|N|From Alonsus Faol.|PRE|43797|
 A Fortifying the Temple|QID|43399|M|51.58,47.77|N|From Alonsus Faol.|PRE|43797|
@@ -226,7 +226,7 @@ A A Hero's Weapon|QID|43420|M|48.50,20.22|N|From Alonsus Faol. I had to leave th
 C A Hero's Weapon|QID|43420|M|49.74,18.77|N|Stand in the circle of light and use the extra action button.|
 T A Hero's Weapon|QID|43420|M|48.50,20.22|N|To Alonsus Faol.|
 ;fresh lvl 45 quests
-A Khadgar's Discovery|QID|39985|M|60.92,44.73|N|From UI Alert the first time you enter Dalaran after reaching level 45.|
+A Khadgar's Discovery|QID|39985|M|60.92,44.73|N|From UI Alert the first time you enter Dalaran after reaching level 45.|LVL|45|
 A Goddess Watch Over You|QID|44337|M|49.74,58.86|N|From a floating pink ball which is apparently Archmage Khadgar and appears when you enter your class hall for the first time after reaching level 45.|
 A Power Word: Armor|QID|44251|M|38.70,23.93|N|From Meridelle Lightspark. Your class hall has a gift for you.|
 T Power Word: Armor|QID|44251|M|38.70,23.93|N|To Meridelle Lightspark.|

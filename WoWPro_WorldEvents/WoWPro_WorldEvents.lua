@@ -6,6 +6,7 @@
 
 WoWPro.WorldEvents = WoWPro:NewModule("WorldEvents")
 WoWPro:Embed(WoWPro.WorldEvents)
+WoWPro.WorldEvents.Version = WoWPro.GetAddOnMetadata("WoWPro_WorldEvents", "Version")
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
 function WoWPro.WorldEvents:OnInitialize()
@@ -19,7 +20,6 @@ function WoWPro.WorldEvents:OnEnable()
 
     --Loading Frames--
     if not WoWPro.WorldEvents.FramesLoaded then --First time the addon has been enabled since UI Load
-        WoWPro.WorldEvents:CreateConfig()
         WoWPro.WorldEvents.FramesLoaded = true
     end
 

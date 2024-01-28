@@ -40,7 +40,7 @@ T Tainted Letter|QID|3105|M|49.97,42.65|N|To Drusilla La Salle outside on the ri
 = Level 2 Training|ACTIVE|18|M|PLAYER|CC|N|Do your level 2 training.\n[color=FF0000]NOTE: [/color]Manually check this step off to continue.|LVL|2|C|Rogue,Warlock|
 
 K Investigate Echo Ridge|ACTIVE|15|QO|1|M|48.39,35.52|N|Kill The Kobold Workers.\n[color=FF0000]NOTE: [/color]The Workers are much larger than the Vermin and have orange glows on their weapons.|T|Kobold Worker|US|
-C Brotherhood of Thieves|QID|18|QO|1|M|48.39,35.52|L|752 8|ITEM|752|N|Defias Thugs.|
+C Brotherhood of Thieves|QID|18|QO|1|M|54.60,41.90|L|752 8|ITEM|752|N|Defias Thugs.|
 L Level 4|ACTIVE|18|N|Grind until you're halfway to level 4.|LVL|3;-700|
 
 T Brotherhood of Thieves|QID|18|M|48.05,43.56|N|To Deputy Willem.|
@@ -90,6 +90,7 @@ A Lost Necklace|QID|85|M|34.49,84.25|N|From "Auntie" Bernice Stonefield.|
 T Lost Necklace|QID|85|M|43.14,85.72|N|To Billy Maclure.|
 A Pie for Billy|QID|86|PRE|85|M|43.14,85.72|N|From Billy Maclure|
 C Chunks of Boar Meat|QID|86|M|41.5,86.8|L|769 4|ITEM|769|N|Stonetusk Boars|T|Stonetusk Boar|US|
+L Level 6|ACTIVE|87|N|Grind until you're within 4 bubbles of level 6.|LVL|5;-550|
 T Pie for Billy|QID|86|M|34.49,84.25|N|To "Auntie" Bernice Stonefield|
 A Back to Billy|QID|84|PRE|86|M|34.49,84.25|N|From "Auntie" Bernice Stonefield.|
 A Young Lovers|QID|106|M|43.15,89.62|N|From Maybell Maclure.|
@@ -101,7 +102,6 @@ R The Fargodeep Mine|ACTIVE|62|QO|1|M|40.45,82.31|Z|1429;Elwynn Forest|N|From ei
 K Goldtooth|ACTIVE|87|M|41.69,77.94|L|981|N|Kill and loot Goldtooth.|
 C Gold Dust Exchange|QID|47|M|41.04,79.78|L|773 10|ITEM|773|N|Any Kobold in or around Fargodeep Mine.|US|
 C Kobold Candles|QID|60|M|41.04,79.78|L|772 8|ITEM|772|N|Any Kobold in or around Fargodeep Mine.|US|
-L Level 6|ACTIVE|87|N|Grind until you're within 6 bubbles of level 6.|LVL|5;-875|
 T Goldtooth|QID|87|M|34.49,84.25|N|To "Auntie" Bernice Stonefield.|
 A Princess Must Die!|QID|88|M|34.66,84.48|N|From Ma Stonefield.|
 T Young Lovers|QID|106|M|29.84,86.00|N|To Tommy Joe Stonefield.|
@@ -111,8 +111,8 @@ A Note to William|QID|107|PRE|111|M|34.94,83.86|N|From Gramma Stonefield.|
 
 R Goldshire|QID|62|M|43.77,65.80|N|Run back to Goldshire.|LVL|6;-1250|S|
 L Level 7|ACTIVE|60|N|Grind until you're within 7 bubbles of level 7.|LVL|6;-1250|
-R Goldshire|QID|62|M|43.77,65.80|N|Run back to Goldshire.|US|
-T Kobold Candles|QID|60|M|43.32,65.70|N|To William Pestle.|US|
+H Goldshire|QID|62|M|43.77,65.80|N|Use your hearth or run back to Goldshire (depending on how close you are).|
+T Kobold Candles|QID|60|M|43.32,65.70|N|To William Pestle.|
 A Shipment to Stormwind|QID|61|PRE|60|M|43.32,65.70|N|From William Pestle.|
 T Note to William|QID|107|M|43.32,65.70|N|To William Pestle.|
 A Collecting Kelp|QID|112|PRE|107|M|43.32,65.70|N|From William Pestle.|
@@ -154,7 +154,7 @@ C A Bundle of Trouble|QID|5545|M|80.44,60.48|Z|1429;Elwynn Forest|L|13872 8|N|Lo
 r Sell and Repair|ACTIVE|5545|M|83.29,66.09|Z|1429;Elwynn Forest|N|Sell and Repair at Rallic Finn.|S|
 T A Bundle of Trouble|QID|5545|M|81.38,66.11|Z|1429;Elwynn Forest|N|To Supervisor Raelen.|
 A Red Linen Goods|QID|83|M|79.46,68.79|Z|1429;Elwynn Forest|N|From Sara Timberlain.|
-l Westfall Deed|AVAILABLE|184|M|69.56,77.20|Z|1429;Elwynn Forest|L|1972|N|Any Defias Mob in Elwynn Forest.\n[color=FF0000]NOTE: [/color]Don\t worry if you don't get this one.|S!US|IZ|Elwynn Forest|
+l Westfall Deed|AVAILABLE|184|M|69.56,77.20|Z|1429;Elwynn Forest|L|1972|N|Any Defias Mob in Elwynn Forest.\n[color=FF0000]NOTE: [/color]Don't worry if you don't get this one.|S!US|IZ|Elwynn Forest|
 A Furlbrow's Deed|QID|184|M|PLAYER|CC|N|From the Westfall Deed you just looted.|U|1972|O|
 C Red Linen Goods|QID|83|M|69.56,77.20|Z|1429;Elwynn Forest|L|1019 6|ITEM|1019|N|Defias Bandits in the area.|S|
 K Princess Must Die!|ACTIVE|88|M|69.70,79.69|L|1006|N|Kill and loot Princess for the Brass Collar.\n[color=FF0000]NOTE: [/color]She has a guard with her, but focus on looting her first.|T|Princess|
@@ -192,7 +192,7 @@ A Riverpaw Gnoll Bounty|QID|11|PRE|239|M|24.24,74.45|Z|1429;Elwynn Forest|N|From
 A Wanted:  "Hogger"|QID|176|M|24.55,74.67;24.52,74.65|CN|Z|1429;Elwynn Forest|ELITE|N|[color=FF8000]Elite: [/color]\nThis quest is available from either Wanted Posters in Westbrook Garrison; the one on the road to the tower or the one in front of the tower.|
 l Gold Pickup Schedule|QID|123|M|26.00,89.60|Z|1429;Elwynn Forest|L|1307|ITEM|1307|N|Gruff Swiftbite (a rare mob the spawns around Forest's Edge) \n[color=FF0000]NOTE: [/color]There is a low 1% drop rate from Hogger and Riverpaws.\nSkip if you can't find him.|T|Gruff|S!US|IZ|Forest's Edge|
 A The Collector|QID|123|M|PLAYER|CC|N|From the Gold Pickup Schedule you just looted.|U|1307|O|
-K Hogger|ACTIVE|176|QO|1|M|27.5,92.5|Z|1429;Elwynn Forest|N|coords This Level 11 Elite has a few spawn points. Group up with whoever is around to make this simple.|S!US|
+K Hogger|ACTIVE|176|QO|1|M|27.5,92.5|Z|1429;Elwynn Forest|N|This Level 11 Elite has a few spawn points. Group up with whoever is around to make this simple.|S!US|
 C Riverpaw Gnoll Bounty|QID|11|M|26.10,87.50|Z|1429;Elwynn Forest|L|782 8|ITEM|782|N|Any Riverpaw Gnoll in Forest's Edge.|
 L Level 10|ACTIVE|61|AVAILABLE|123|N|Grind until you're within 8 bubbles of level 10.|LVL|9;-2610|
 L Level 10|ACTIVE|11&123|N|Grind until you're within 5 bubbles of level 10.|LVL|9;-1610|
@@ -257,13 +257,13 @@ f Sentinel Hill|ACTIVE|1097|M|56.55,52.65|Z|Westfall|N|Discover Sentinel Hill Fl
 F Stormwind|ACTIVE|1097|M|56.55,52.65|Z|Westfall|N|Fly to Stormwind City|TZ|Stormwind City|
 
 ; ---------- LEVEL 10 CLASS QUEST cont.------------
-T Gakin's Summons|QID|1685|M|25.2,78.6|Z|Stormwind City|N|coordsTo Gakin the Darkbinder, in the basement of an inn, in the Mage Quarter.|C|Warlock|
-A Surena Caledon|QID|1688|M|25.2,78.6|Z|Stormwind City|N|From Gakin the Darkbinder.|C|Warlock|
-C Surena Caledon|QID|1688|M|71,80|N|coordsFind, kill and loot Surena Caladon.|T|Surena Caladon|C|Warlock|
-T Surena Caledon|QID|1688|M|25.2,78.6|Z|Stormwind City|N|To Gakin the Darkbinder.|C|Warlock|
-A The Binding|QID|1689|PRE|1688|M|25.2,78.6|Z|Stormwind City|N|From Gakin the Darkbinder.|C|Warlock|
-C The Binding|QID|1689|M|25.2,77.2|Z|Stormwind City|N|Go down the stairs right behind Gakin.turn right at bottom, down more stairs. right again, down more stairs, left, down most of the way and left again, this last door is easy to miss. Stand on the purple runed summoning circle and use the provided choker to summon a voidwalker then kill it.|U|6928|C|Warlock|
-T The Binding|QID|1689|M|25.2,78.6|Z|Stormwind City|N|To Gakin the Darkbinder.|C|Warlock|
+T Gakin's Summons|QID|1685|M|39.34,85.21|Z|Stormwind City|N|To Gakin the Darkbinder, in the basement of an inn, in the Mage Quarter.|C|Warlock|
+A Surena Caledon|QID|1688|M|39.34,85.21|Z|Stormwind City|N|From Gakin the Darkbinder.|C|Warlock|
+C Surena Caledon|QID|1688|M|71,80|N|Find, kill and loot Surena Caladon.|T|Surena Caladon|C|Warlock|
+T Surena Caledon|QID|1688|M|39.34,85.21|Z|Stormwind City|N|To Gakin the Darkbinder.|C|Warlock|
+A The Binding|QID|1689|PRE|1688|M|39.34,85.21|Z|Stormwind City|N|From Gakin the Darkbinder.|C|Warlock|
+C The Binding|QID|1689|M|39.10,84.25|Z|Stormwind City|N|Go down the stairs right behind Gakin.turn right at bottom, down more stairs. right again, down more stairs, left, down most of the way and left again, this last door is easy to miss. Stand on the purple runed summoning circle and use the provided choker to summon a voidwalker then kill it.|U|6928|C|Warlock|
+T The Binding|QID|1689|M|39.34,85.21|Z|Stormwind City|N|To Gakin the Darkbinder.|C|Warlock|
 T Mirror Lake|QID|1861|M|38.6,79.4|Z|Stormwind City|N|To Jennea Cannon.|C|Mage|
 T Seek out SI: 7|QID|2205|M|76.0,59.8|Z|Stormwind City|N|To Master Mathias Shaw.|C|Rogue|
 A Snatch and Grab|QID|2206|PRE|2205|M|76.0,59.8|Z|Stormwind City|N|From Master Mathias Shaw.|C|Rogue|
