@@ -1,6 +1,7 @@
-local guide = WoWPro:RegisterGuide('AriDee8283', "Leveling", 'Deepholm', 'WoWPro Team', 'Neutral')
-WoWPro:GuideName(guide,"Deepholm")
+local guide = WoWPro:RegisterGuide('AriDee8283', "Leveling", 'Deepholm', 'Arixan', 'Neutral')
 WoWPro:GuideSort(guide, 83)
+WoWPro:GuideNickname(guide, "Deepholm")
+WoWPro:GuideName(guide,"Deepholm")
 WoWPro:GuideNextGuide(guide, 'Cataclysm: Guide Hub')
 WoWPro:GuideSteps(guide, function()
 return [[
@@ -374,7 +375,7 @@ R Stormwind City|QID|28292|M|48.53,53.84|N|Go back into the main chamber of the 
 T That's No Pyramid!|QID|28292|M|85.77,25.85|Z|Stormwind City|N|To Harrison Jones.|FACTION|Alliance|
 A Meetup with the Caravan|QID|28295|LEAD|27003|PRE|28292|N|From Harrison Jones.|M|85.77,25.85|Z|Stormwind City|FACTION|Alliance|
 F Booty Bay|QID|28295|Z|Stormwind City|M|70.99,72.57|N|Fly to Booty Bay.|FACTION|Alliance|
-b Ratchet|QID|28295|Z|210;The Cape of Stranglethorn|M|39,67|N|Take the boat to Ratchet.|FACTION|Alliance|
+b Ratchet|QID|28295|Z|The Cape of Stranglethorn|M|39,67|N|Take the boat to Ratchet.|FACTION|Alliance|
 F Southmoon Ruins|QID|28295|Z|Tanaris|M|69.13,70.70|N|Fly to Southmoon Ruins in the southern part of Tanaris.|FACTION|Alliance|
 T Meetup with the Caravan|QID|28295|N|To Adarrah.|M|30.51,65.51|Z|Tanaris|FACTION|Alliance|
 A The Twilight Plot|QID|27005|M|51.20,50.10|N|From Examiner Rowe.|FACTION|Horde|

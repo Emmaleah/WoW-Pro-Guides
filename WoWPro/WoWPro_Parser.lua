@@ -16,7 +16,7 @@ WoWPro.actiontypes = {
     K = "Interface\\Icons\\Ability_Creature_Cursed_02",
     R = "Interface\\Icons\\Ability_Tracking",
     H = "Interface\\Icons\\INV_Misc_Rune_01",
-    h = "Interface\\AddOns\\WoWPro\\Textures\\INNKEEPER.tga",
+    h = "Interface\\AddOns\\WoWPro\\Textures\\resting.tga",
     F = "Interface\\AddOns\\WoWPro\\Textures\\Ability_Druid_FlightForm",
     f = "Interface\\Icons\\Ability_Hunter_EagleEye",
     M = "Interface\\Icons\\Trade_engineering",
@@ -311,7 +311,6 @@ DefineTag("NOCACHE", "nocache","boolean",nil,nil)
 DefineTag("NOAUTO", "noauto","boolean",nil,nil)
 DefineTag("QG","gossip","string",nil, function (value,i) WoWPro.gossip[i] = value:upper() end)
 DefineTag("RARE","rare","boolean",nil,nil)
-DefineTag("DUNGEON","dungeon","boolean",nil,nil)
 DefineTag("T","target","string",nil,nil)
 DefineTag("U","use","string",validate_andor_list_of_ints,nil)
 DefineTag("V","vehichle","boolean",nil,nil) -- Yeah, that is how blizzard spelled it!
@@ -340,7 +339,6 @@ DefineTag("RECIPE","recipe","number",nil,nil)
 DefineTag("SPELL","spell","string",nil,nil)
 DefineTag("TAXI","taxi","string",nil,nil)
 DefineTag("HOA","hoa","string",nil,nil)
-DefineTag("RUNE","rune","boolean",nil,nil)
 
 -- Pet Stuff
 DefineTag("DEAD","dead","string",nil,nil)

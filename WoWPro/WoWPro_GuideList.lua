@@ -104,10 +104,7 @@ end
 function WoWPro.CreateGuideList()
     local frame = _G.CreateFrame("Frame", "WoWPro_GuideList", _G.InterfaceOptionsFramePanelContainer)
     frame.name = L["Guide List"]
-    frame.parent = "WoWPro"
-    frame.okay = function () return true; end
-    frame.default = function () return true; end
-    frame.refresh =  function () return true; end
+    frame.parent = "WoW-Pro"
     frame:Hide()
     WoWPro.GuideList = frame
 

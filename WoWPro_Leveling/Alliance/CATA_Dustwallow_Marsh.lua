@@ -1,33 +1,22 @@
-local guide = WoWPro:RegisterGuide('WkjDus3540', "Leveling", 'Dustwallow Marsh', 'WoWPro Team', 'Alliance')
-WoWPro:GuideName(guide,"Dustwallow Marsh")
+local guide = WoWPro:RegisterGuide('WkjDus3540', "Leveling", 'Dustwallow Marsh', 'WKjezz', 'Alliance')
 WoWPro:GuideSort(guide, 18)
 WoWPro:GuideNextGuide(guide, 'Cataclysm: Guide Hub')
 WoWPro:GuideSteps(guide, function()
 return [[
-N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|84;Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
+N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
 N This Guide|QID|27251|N|Picks up directly from where Southern Barrens leaves off. If you did not do Southern Barrens, you can take the Hero's Call quest from Darnassus, Exodar or Stormwind instead.  Either make your way to Fort Triumph and run to Theramore or sail from Wetlands.  (Manually close this step by right clicking the check box)|
-t The Call of Kalimdor|QID|26596|M|68.42,69.12|Z|10; Northern Barrens|N|To Gazlowe.|IZ|Ratchet|
-A Flight to Theramore|QID|26702|M|68.42,69.12|Z|10; Northern Barrens|N|To Gazlowe.|IZ|Ratchet|
-A WANTED: Cap'n Garvey|QID|895|M|68.28,71.28|Z|10; Northern Barrens|N|From the WANTED poster.|RANK|2|
-A It's Gotta be the Horn|QID|865|M|67.85,71.58|Z|10; Northern Barrens|N|From Mebok Mizzyrix.|
-l WANTED: Cap'n Garvey|ACTIVE|895|QO|1|M|77.81,89.20|Z|10; Northern Barrens|ITEM|5084|N|Cap'n Garvey\n[color=FF0000]NOTE: [/color]If you're feeling lucky you can try to pickpocket it from him (It's been done 9 times according to WH)|
-T WANTED: Cap'n Garvey|QID|895|M|68.42,69.12|Z|10; Northern Barrens|N|To Gazlowe.|
-l It's Gotta be the Horn|ACTIVE|865|QO|1|M|64.82,57.15;65.10,61.60|Z|10; Northern Barrens|CN|ITEM|46850|N|Reaperclaw\nHe (and his minions) wander back and forth between the waypoints.|
-T It's Gotta be the Horn|QID|865|M|67.85,71.52|Z|10; Northern Barrens|N|To Mebok Mizzyrix.|
-f Ratchet|ACTIVE|26702|M|68.96,70.53|Z|10; Northern Barrens|N|From Bragok|
-T Flight to Theramore|QID|26702|M|68.33,51.07|Z|70; Dustwallow Mash|N|Tell Bragok you are ready to fly to Theramore.|
-;R Dustwallow Marsh|QID|27251|M|56.61,78.35|Z|Southern Barrens|N|Head into Dustwallow Marsh.|
-;R Theramore Isle |QID|27251|M|68.19,46.82|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
-A Traitors Among Us|QID|27210|M|68.33,51.04|N|From Calia Hastings.|
+R Dustwallow Marsh|QID|27251|M|56.61,78.35|Z|Southern Barrens|N|Head into Dustwallow Marsh.|
+R Theramore Isle |QID|27251|M|68.19,46.82|N|Follow the path all the way east to Theramore. It's populated by Alliance vehicles and banners.|
 A They Call Him Smiling Jim|QID|27251|LEAD|27249|M|66.05,45.91|N|From Guard Byron.|
 h Theramore Isle|QID|27251|M|66.57,45.26|N|At Innkeeper Janene. Take this chance to sell your junk and restock also.|
 A Mudrock Soup and Bugs|QID|1204|M|68.23,48.79|N|From Morgan Stern.|
-T Reinforcements From Theramore|QID|26687|M|68.21,48.58|N|To Captain Garran Vimes.|O|
+T Reinforcements From Theramore|QID|26687|O|M|68.21,48.58|N|To Captain Garran Vimes.|
 T They Call Him Smiling Jim|QID|27251|M|68.21,48.58|N|To Captain Garran Vimes.|
 A Inspecting the Ruins|QID|27249|M|68.21,48.58|N|From Captain Garran Vimes.|
 f Theramore Isle|QID|27210|M|67.49,51.33|N|At Baldruc.|
 A This Old Lighthouse|QID|27216|M|68.30,51.84|N|From Sergeant Amelyn.|
 T Hero's Call: Dustwallow Marsh! |QID|28552|M|68.36,51.02|O|N|To Calia Hastings|
+A Traitors Among Us|QID|27210|M|68.33,51.04|N|From Calia Hastings.|
 C Traitors Among Us|QID|27210|M|66.17,46.19|N|Talk to the Deserters, They hang out near guards. Some times they will turn agressive and PVP flag you. You must kill them for credit.|
 T Traitors Among Us|QID|27210|M|68.36,51.02|N|To Calia Hastings.|
 A Propaganda War|QID|27211|PRE|27210|M|68.36,51.02|N|From Calia Hastings.|
@@ -124,9 +113,9 @@ C Survey Alcaz Island|QID|27239|NC|M|67.37,51.07|N|Tell Cassa Crimsonwing you ar
 T Survey Alcaz Island|QID|27239|M|66.26,49.04|N|To Lady Jaina Proudmoore.|
 A Proof of Treachery|QID|27240|PRE|27239|M|66.27,49.05|N|From Lady Jaina Proudmoore. Wait a few seconds and this quest will appear.|
 R Stormwind City|QID|27240|M|66.26,49.05|N|Talk to Jaina to be ported to Stormwind.|
-T Proof of Treachery|QID|27240|M|85.78,31.72|Z|84;Stormwind City|N|To King Anduin Wyrnn.|
-A Return to Jaina|QID|27241|PRE|27240|M|85.78,31.72|Z|84;Stormwind City|N|To King Anduin Wyrnn.|
-R Theramore Isle|QID|27241|M|50.51,87.47|Z|84;Stormwind City|N|Head to the Mage Quarter and talk to Archmage Malin to get back to Theramore Isle.|
+T Proof of Treachery|QID|27240|M|85.78,31.72|Z|Stormwind City|N|To King Anduin Wyrnn.|
+A Return to Jaina|QID|27241|PRE|27240|M|85.78,31.72|Z|Stormwind City|N|To King Anduin Wyrnn.|
+R Theramore Isle|QID|27241|M|50.51,87.47|Z|Stormwind City|N|Head to the Mage Quarter and talk to Archmage Malin to get back to Theramore Isle.|
 T Return to Jaina|QID|27241|M|66.26,49.05|N|To Jaina Proudmore.|
 C ... and Bugs|QID|1258|M|68.78,46.53|N|Work your way around the banks of the town. The crabs drop their legs 100%.|
 T ... and Bugs|QID|1258|M|68.26,48.70|N|To Morgan Stern.|

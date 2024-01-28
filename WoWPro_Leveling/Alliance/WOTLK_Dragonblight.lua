@@ -5,7 +5,7 @@ WoWPro:GuideName(guide,"Dragonblight")
 WoWPro:GuideNextGuide(guide, "Grizzly Hills")
 WoWPro:GuideSteps(guide, function()
 return [[
-N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|84;Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
+N It's Chromie Time!|AVAILABLE|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|S!US|N|You can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in and scale the content to your level.\n\nYou're free to continue your current guide by skipping this and continuing on, but it won't continue to scale. If you want to enable Chromie Time, click the guide button next to this frame to direct you to Chromie in Stormwind!|LVL|-60|CT|
 N Note|QID|12174^12298|N|If you followed my previous guides, you should be in Wintergarde Keep, Dragonblight and have the following quest: High Commander Halford Wyrmbane If you don't have it, just ignore this quest, it's not a big deal, you can get the follow up anyway. Let's get started!|
 N Warning!|QID|12174^12298|N|Throughout this whole chapter, do NOT get the quest [The Hills Have Us]. If you take it, this will fly you to Grizzly Hills and will make you waste a lot of time.|
 T High Commander Halford Wyrmbane|QID|12174^12298|LEAD|12235|N|To High Commander Halford Wyrmbane.|M|78.58,48.26|
@@ -31,7 +31,7 @@ A WANTED: Onslaught Commander Iustus|QID|12442|PRE|12251|N|From the Wanted Poste
 h Wintergarde Keep|QID|12253|N|Make this inn your home location with Illusia Lune.|M|77.50,51.50|
 K Vengeful Geists|ACTIVE|12258|QO|1|M|79.9,49.7|S|N|Kill any Vengeful Geist you see.|
 C Rescue from Town Square|QID|12253|S|N|Kill Vengeful Geists to free the Trapped Wintergarde Villagers.|
-C Imprints on the Past|QID|12282|NC|N|Go back to the gate and take the path going down south. Go to the first building on your right-hand side. Go to the upper floor and find the Scrying Orb.|M|78.90,50.90|
+C Imprints on the Past|QID|12282|N|Go back to the gate and take the path going down south. Go to the first building on your right-hand side. Go to the upper floor and find the Scrying Orb.|M|78.90,50.90|
 C Rescue from Town Square|QID|12253|US|N|Now just go from one building to another, killing Vengeful Geists to free the Trapped Wintergarde Villagers.|
 K Vengeful Geists|ACTIVE|12258|QO|1|M|79.9,49.7|US|N|Finish killing Vengeful Geists.|
 T Rescue from Town Square|QID|12253|N|To High Commander Halford Wyrmbane.|M|78.58,48.26|

@@ -1,6 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-    <Script file="Emm_Blanchy.lua"/>
-	<Script file="Emmaleah_Hippogryph.lua"/>
-	<Script file="Elidion_Hivemind.lua"/>
-	<Script file="Ludo_Lucid.lua"/>
-</Ui>

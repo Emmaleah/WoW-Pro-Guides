@@ -5,7 +5,7 @@
 
 local guide = WoWPro:RegisterGuide("LudoDalCook",'Dailies', "Dalaran", "Ludovicus", "Neutral")
 WoWPro:GuideLevels(guide,10,10,10)
-WoWPro.Dailies:GuideNameAndCategory(guide,"Dalaran Cooking", "Professions")
+WoWPro.Dailies:GuideNameAndCategory(guide,"Dalaran Cooking")
 WoWPro:GuideSteps(guide, function()
 return [[
 

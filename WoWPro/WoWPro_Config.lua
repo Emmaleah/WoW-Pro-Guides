@@ -1,4 +1,4 @@
--- luacheck: globals pairs ipairs tostring
+-- luacheck: globals pairs ipairs
 
 -----------------------------
 --      WoWPro_Config      --
@@ -38,9 +38,10 @@ local soundfiles = {
 }
 
 
-local function createDisplayConfig()
+local function CreateDisplayConfig()
     return {
         type = "group",
+        order = 2,
         name = L["Guide Display"],
         desc = L["Options that alter the way the guide frame looks"],
         args = {
@@ -61,39 +62,37 @@ local function createDisplayConfig()
                 desc = L["Enables the guide window to be moved by clicking anywhere on it and dragging"],
                 get = function(info) return WoWProDB.profile.drag end,
                 set = function(info,val) WoWProDB.profile.drag = val
-                    WoWPro.DragSet() end
+                    WoWPro.DragSet() end,
             },
             padding = {
-                order = 25,
+                order = 4,
                 type = "range",
                 name = L["Padding"],
                 desc = L["The padding determines how much blank space is left between the guide text and the border of the guide frame."],
                 min = 0, max = 20, step = 1,
                 get = function(info) return WoWProDB.profile.pad end,
                 set = function(info,val) WoWProDB.profile.pad = val
-                    WoWPro.PaddingSet(); WoWPro.RowSizeSet() end,
-                width = "double"
+                    WoWPro.PaddingSet(); WoWPro.RowSizeSet() end
             },
             spacing = {
-                order = 26,
+                order = 5,
                 type = "range",
                 name = L["Spacing"],
                 desc = L["Spacing determines how much blank space is left between lines in the guide text. "],
                 min = 0, max = 10, step = 1,
                 get = function(info) return WoWProDB.profile.space end,
                 set = function(info,val) WoWProDB.profile.space = val
-                    WoWPro.RowSizeSet() end,
-                width = "double"
+                    WoWPro.RowSizeSet() end
             },
             hide = {
                 order = 6,
                 type = "toggle",
-                name = L["Enable Instance Hide"],
+                name = L["Enable Instance Hiding"],
                 desc = L["Enables/Disables hiding the active module when inside an instance (Dungeon, Arena ...), unless the guide wants you there!"],
                 get = function(info) return WoWProCharDB.AutoHideInsideInstances ; end,
                 set = function(info,val)
                         if WoWProCharDB.AutoHideInsideInstances == true then WoWProCharDB.AutoHideInsideInstances=false; else WoWProCharDB.AutoHideInsideInstances=true; end
-                   end
+                    end
             },
             notify = {
                 order = 6.5,
@@ -108,7 +107,7 @@ local function createDisplayConfig()
             combathide = {
                 order = 7,
                 type = "toggle",
-                name = L["Enable Combat Hide"],
+                name = L["Enable Combat Hiding"],
                 desc = L["Enables/Disables hiding the active module when you are in combat."],
                 get = function(info) return WoWProCharDB.AutoHideInCombat ; end,
                 set = function(info,val)
@@ -159,6 +158,11 @@ local function createDisplayConfig()
                 get = function(info) return WoWProDB.profile.autoload end,
                 set = function(info,val) WoWProDB.profile.autoload = val end
             },
+            blank2 = {
+                order = 20,
+                type = "description",
+                name = " ",
+            },
             guidescroll = {
                 order = 21,
                 type = "toggle",
@@ -167,11 +171,10 @@ local function createDisplayConfig()
                 get = function(info) return WoWProDB.profile.guidescroll end,
                 set = function(info,val) WoWProDB.profile.guidescroll = val
                     WoWPro:TitlebarSet()
-                    WoWPro:UpdateGuide("Config: Scroll Mode") end,
-                    width = "double"
+                    WoWPro:UpdateGuide("Config: Scroll Mode") end
             },
             checksoundfile = {
-                order = 23,
+                order = 22,
                 type = "select",
                 name = L["Step Completed Sound"],
                 desc = L["Sound played when a guide step is completed"],
@@ -195,7 +198,7 @@ local function createDisplayConfig()
                 set = function(info,val) WoWProDB.profile.checksound = val end
             },
             lefty = {
-                order = 22,
+                order = 24,
                 type = "toggle",
                 name = L["Left Handed"],
                 desc = L["Put Use and Target Icons on the right side of the guide window."],
@@ -251,8 +254,7 @@ local function createDisplayConfig()
                 min = 50, max = 1000, step = 10,
                 get = function(info) return WoWProDB.profile.hminresize end,
                 set = function(info,val) WoWProDB.profile.hminresize = val
-                    WoWPro:ResizeSet(); WoWPro.RowSizeSet() end,
-                width = "double"
+                    WoWPro:ResizeSet(); WoWPro.RowSizeSet() end
             },
             minresizev = {
                 order = 36,
@@ -262,8 +264,7 @@ local function createDisplayConfig()
                 min = 50, max = 1000, step = 10,
                 get = function(info) return WoWProDB.profile.vminresize end,
                 set = function(info,val) WoWProDB.profile.vminresize = val
-                    WoWPro:ResizeSet(); WoWPro.RowSizeSet() end,
-                width = "double"
+                    WoWPro:ResizeSet(); WoWPro.RowSizeSet() end
             },
             blank4 = {
                 order = 40,
@@ -282,8 +283,7 @@ local function createDisplayConfig()
                 desc = L["Enables/disables the title bar attached to the guide window."],
                 get = function(info) return WoWProDB.profile.titlebar end,
                 set = function(info,val) WoWProDB.profile.titlebar = val
-                    WoWPro.TitlebarSet(); WoWPro.PaddingSet(); WoWPro.RowSizeSet() end,
-                width = "double"
+                    WoWPro.TitlebarSet(); WoWPro.PaddingSet(); WoWPro.RowSizeSet() end
             },
             titlecolor = {
                 order = 43,
@@ -321,8 +321,7 @@ local function createDisplayConfig()
                 get = function(info)
                     return WoWProDB.profile.bgtexture end,
                 set = function(info,val) WoWProDB.profile.bgtexture = val
-                    WoWPro.BackgroundSet() end,
-                    width = "double"
+                    WoWPro.BackgroundSet() end
             },
             bgcolor = {
                 order = 53,
@@ -351,8 +350,7 @@ local function createDisplayConfig()
                     return WoWProDB.profile.bordertexture end,
                 set = function(info,val) WoWProDB.profile.bordertexture = val
                     WoWPro.border = true
-                    WoWPro.BackgroundSet() end,
-                    width = "double"
+                    WoWPro.BackgroundSet() end
             },
             border = {
                 order = 55,
@@ -378,8 +376,7 @@ local function createDisplayConfig()
                 get = function(info)
                     return WoWProDB.profile.stickytexture end,
                 set = function(info,val) WoWProDB.profile.stickytexture = val
-                    WoWPro.BackgroundSet(); WoWPro.RowColorSet() end,
-                    width = "double"
+                    WoWPro.BackgroundSet(); WoWPro.RowColorSet() end
             },
             stickycolor = {
                 order = 57,
@@ -611,33 +608,33 @@ local function createDisplayConfig()
                 set = function(info,r,g,b)
                     WoWProDB.profile.stickytitletextcolor = {r,g,b}
                     WoWPro.RowFontSet() end
-            }
+            },
         }
     }
 end
 
-local function createMainConfig()
-    return {
-        name = L["Main"],
+local function createBlizzOptions()
+    config:RegisterOptionsTable("WoWPro-Bliz", {
+        name = L["WoW-Pro Guides"],
         type = "group",
         args = {
             version = {
-                order = 11,
+                order = 1,
                 type = "description",
                 name = L["Version"]..": "..WoWPro.Version,
             },
-            header = {
-                order = 10,
-                type = "header",
-                name = L["Addon Version Installed"],
+            help = {
+                order = 2,
+                type = "description",
+                name = L["Account wide settings for WoW-Pro's guide addon."],
             },
             header1 = {
-                order = 13,
+                order = 3,
                 type = "header",
                 name = "Addon Enable and Debugging",
             },
             enable = {
-                order = 14,
+                order = 10,
                 type = "toggle",
                 name = L["Enable Addon"],
                 desc = L["Enables/Disables showing the WoW-Pro guide addons."],
@@ -653,7 +650,7 @@ local function createMainConfig()
                     end
             },
             enableDebug = {
-                order = 15,
+                order = 11,
                 type = "toggle",
                 name = L["Enable Debug"],
                 desc = L["Enables/Disables debug logging"],
@@ -668,12 +665,12 @@ local function createMainConfig()
                     end
             },
             header2 = {
-                order = 16,
+                order = 15,
                 type = "header",
                 name = "Automation",
             },
             autoSelect = {
-                order = 17,
+                order = 16,
                 type = "toggle",
                 name = L["Auto Select"],
                 desc = L["Enables/Disables automatically selecting quests/flights from NPCs"],
@@ -687,7 +684,7 @@ local function createMainConfig()
                     end
             },
             autoAccept = {
-                order = 18,
+                order = 17,
                 type = "toggle",
                 name = L["Auto Accept"],
                 desc = L["Enables/Disables automatically accepting quests from NPCs"],
@@ -701,7 +698,7 @@ local function createMainConfig()
                     end
             },
             autoTurnin = {
-                order = 19,
+                order = 18,
                 type = "toggle",
                 name = L["Auto Turnin"],
                 desc = L["Enables/Disables automatically turning in quests to NPCs"],
@@ -761,23 +758,8 @@ local function createMainConfig()
                         end
                     end
             },
-            doDungeons = {
-                order = 24,
-                type = "toggle",
-                name = L["Skip Dungeon Quests"],
-                desc = L["Skips dungeon-specific quests outside Dungeon guides."],
-                get = function(info) return WoWProCharDB.EnableDungeons end,
-                set = function(info,val)
-                        if WoWProCharDB.EnableDungeons then
-                            WoWProCharDB.EnableDungeons = false
-                        else
-                            WoWProCharDB.EnableDungeons = true
-                        end
-                    end,
-                width = "double"
-            },
             doFlight = {
-                order = 25,
+                order = 24,
                 type = "toggle",
                 name = L["Skip Flights"],
                 desc = L["Skips most flight steps when you have flying in that zone."],
@@ -789,6 +771,34 @@ local function createMainConfig()
                             WoWProCharDB.EnableFlight = true
                         end
                     end
+            },
+            grank = {
+                order = 25,
+                type = "range",
+                name = L["Global Rank (Difficulty/Completeness)"],
+                desc = L["Governs how many steps will be skipped. Use 3 for the most completeness, 1 to skip all non-essential steps."],
+                min = 1, max = 3, step = 1,
+                get = function(info) return WoWProDB.profile.rank end,
+                set = function(info,val) WoWProDB.profile.rank = val
+                    if WoWProDB.char.currentguide and WoWProCharDB.Guide[WoWProDB.char.currentguide] then
+                        WoWProCharDB.Guide[WoWProDB.char.currentguide].skipped = {}
+                    end
+                    WoWPro.UpdateGuide("Config: GRank") end,
+                width = "double"
+            },
+            trank = {
+                order = 26,
+                type = "range",
+                name = L["Toon Rank (Difficulty/Completeness)"],
+                desc = L["Governs how many steps will be skipped. Use 3 for the most completeness, 1 to skip all non-essential steps."],
+                min = 1, max = 3, step = 1,
+                get = function(info) return WoWProCharDB.Rank[1] end,
+                set = function(info,val) WoWProCharDB.Rank[1] = val
+                    if WoWProDB.char.currentguide and WoWProCharDB.Guide[WoWProDB.char.currentguide] then
+                        WoWProCharDB.Guide[WoWProDB.char.currentguide].skipped = {}
+                    end
+                    WoWPro.UpdateGuide("Config: TRank") end,
+                width = "double"
             },
             header4 = {
                 order = 50,
@@ -828,48 +838,48 @@ local function createMainConfig()
                 name = " ",
             },
             aboutheader = {
-                order = 1,
+                order = 91,
                 type = "header",
                 name = "About WoW-Pro",
             },
             blank11 = {
-                order = 2,
+                order = 92,
                 type = "description",
                 name = " ",
             },
             about10 = {
-                order = 3,
+                order = 93,
                 type = "description",
                 fontSize = "medium",
                 name = "WoW-Pro is a addon collection by gamers, for gamers. The collection includes hundreds of free guides covering every facet of World of Warcraft."
             },
             blank12 = {
-                order = 4,
+                order = 94,
                 type = "description",
                 name = " ",
             },
             about14 = {
-                order = 5,
+                order = 99,
                 type = "description",
                 fontSize = "medium",
                 name =
                     "Over the years WoW-Pro has grown into a huge, active community of gamers. "
             },
             blank18 = {
-                order = 6,
+                order = 100,
                 type = "description",
                 name = " ",
             },
             about15 = {
-                order = 7,
+                order = 101,
                 type = "description",
                 fontSize = "medium",
                 name =
                     "The WoW-Pro addon has brought many of the guides we've built as a community into the game, "..
-                    "and built on them since WotLK to the Classic(s) and Dragonflight.\n\nDrop by on Discord and say hello!"
+                    "and built on them since WotLK to Classic(s) and Dragonflight. Drop by on Discord and say hello!"
             },
             blank19 = {
-                order = 8,
+                order = 102,
                 type = "description",
                 name = "",
                 image = "Interface/AddOns/WoWPro/Textures/Discord",
@@ -878,66 +888,51 @@ local function createMainConfig()
                 width = "half"
             },
             about16 = {
-                order = 9,
+                order = 103,
                 type = "input",
                 name = "Discord",
                 get = function () return "https://discord.gg/aarduK7"; end,
                 set = function () return "https://discord.gg/aarduK7"; end,
                 icon = "Interface\\AddOns\\WoWPro\\Textures\\Discord",
-            }
-        }
-    }
-end
+            },
+        },
+    })
 
-local function createExpertOptions()
-    return {
-        name = L["Expert"],
+
+    dialog:SetDefaultSize("WoWPro-Bliz", 600, 400)
+    dialog:AddToBlizOptions("WoWPro-Bliz", "WoW-Pro")
+
+    -- Display Options
+    local display = CreateDisplayConfig()
+    config:RegisterOptionsTable("WoWPro-Display", display)
+    dialog:AddToBlizOptions("WoWPro-Display", display.name, "WoW-Pro")
+
+    -- Profile Options
+    config:RegisterOptionsTable("WoWPro-Profile", _G.LibStub("AceDBOptions-3.0"):GetOptionsTable(WoWProDB))
+    dialog:AddToBlizOptions("WoWPro-Profile", "WoW-Pro Profiles", "WoW-Pro")
+
+    -- Expert Options
+    local expert = {
+        name = L["WoW-Pro Expert"],
         type = "group",
         args = {
-            header = {
+            version = {
                 order = 1,
-                type = "header",
-                name = L["Quest Engine Delay"],
-            },
-            spacer1 = {
-                order = 1.1,
                 type = "description",
-                name = " ",
-                width = "full"
+                name = L["Version"]..": "..WoWPro.Version,
             },
-            QuestEngineDelay = {
+            help = {
                 order = 2,
-                type = "range",
-                name = L["The amount of time to wait for the WoW client to update it's state."],
-                min = 0.1, max = 0.75, step = .05,
-                get = function(info) return WoWProDB.global.QuestEngineDelay end,
-                set = function(info,val) WoWProDB.global.QuestEngineDelay = val end,
-                width = "full"
-            },
-            spacer2 = {
-                order = 3,
                 type = "description",
-                name = " ",
-                width = "full"
-            },
-            spacer3 = {
-                order = 3.1,
-                type = "description",
-                name = " ",
-                width = "full"
-            },
-            header2 = {
-                order = 3.2,
-                type = "header",
-                name = L["Stay away from the below settings unless you are a developer"],
+                name = L["Expert settings for WoW-Pro's addons."],
             },
             blank = {
-                order = 4,
+                order = 3,
                 type = "description",
                 name = " ",
             },
             debugClasses = {
-                order = 5,
+                order = 4,
                 type = "toggle",
                 name = L["Debug Classes"],
                 desc = L["Enables/Disables loading of all class guides"],
@@ -949,11 +944,10 @@ local function createExpertOptions()
                             WoWPro.DebugClasses = (WoWPro.DebugLevel > 0)
                         end
                         WoWProCharDB.DebugClasses = WoWPro.DebugClasses
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailQuestline = {
-                order = 6,
+                order = 5.0,
                 type = "toggle",
                 name = L["Grail Quest Lines"],
                 desc = L["Enables/Disables Grail Quest Line Integration"],
@@ -964,11 +958,10 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailQuestline = true
                         end
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailCheckPrereq = {
-                order = 7,
+                order = 5.1,
                 type = "toggle",
                 name = L["Grail Check PRE"],
                 desc = L["Enables/Disables Grail Quest Prerequistite Quest Checking"],
@@ -979,11 +972,10 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailCheckPrereq = true
                         end
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailBreadcrumbs = {
-                order = 8,
+                order = 5.2,
                 type = "toggle",
                 name = L["Grail Check LEAD"],
                 desc = L["Enables/Disables Grail Quest Breadcrumb Quest Checking"],
@@ -994,11 +986,10 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailBreadcrumbs = true
                         end
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailQuestName = {
-                order = 9,
+                order = 5.3,
                 type = "toggle",
                 name = L["Grail Quest Name Check"],
                 desc = L["Enables/Disables Grail Quest Quest Name Checking"],
@@ -1009,11 +1000,10 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailQuestName = true
                         end
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailQuestLevel = {
-                order = 10,
+                order = 5.4,
                 type = "toggle",
                 name = L["Grail Quest Level Check"],
                 desc = L["Enables/Disables Grail Quest Quest Level Checking"],
@@ -1024,11 +1014,10 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailQuestLevel = true
                         end
-                    end,
-                    width = "double"
+                    end
             },
             EnableGrailQuestObsolete = {
-                order = 11,
+                order = 5.5,
                 type = "toggle",
                 name = L["Grail Obsolete Quest Check"],
                 desc = L["Enables/Disables Grail Quest Quest Obsolete Checking"],
@@ -1039,161 +1028,37 @@ local function createExpertOptions()
                         else
                             WoWProCharDB.EnableGrailQuestObsolete = true
                         end
-                    end,
-                width = "double"
+                    end
             },
+
             checkGuides = {
-                order = 13,
+                order = 6,
                 type = "execute",
-                name = L["Guide Errors Checker"],
+                name = L["Run the Guide Checker"],
+                desc = L["Load every available guide and check for errors."],
                 image = "Interface\\RaidFrame\\ReadyCheck-Waiting",
                 func =  function (info)
                             WoWPro:LogClear("CheckGuides");
                             WoWPro:LoadAllGuides()
-                        end,
-                        width = "double"
+                        end
+            },
+            QuestEngineDelay = {
+                order = 10,
+                type = "range",
+                name = L["Quest Engine Delay"],
+                desc = L["The amount of time to wait for the WoW client to update it's state."],
+                min = 0.1, max = 0.75, step = .05,
+                get = function(info) return WoWProDB.global.QuestEngineDelay end,
+                set = function(info,val) WoWProDB.global.QuestEngineDelay = val end
             },
         },
     }
-end
-
-local function createRankConfig()
-    local ranks = {
-        name = L["Ranks"],
-        type = "group",
-        args = {
-            WoWProRank={name="WoWPro",
-            type = "group",
-            order = 50,
-            args = {
-                header = {
-                    order = 10,
-                    type = "header",
-                    name = L["Addon Version Installed"],
-                },
-                version = {
-                    order = 11,
-                    type = "description",
-                    name = L["Version"]..": "..WoWPro.Version,
-                },
-                header2 = {
-                    order = 13,
-                    type = "header",
-                    name = L["Rank Settings"],
-                },
-                grank = {
-                    order = 25,
-                    type = "range",
-                    name = L["Global Rank (Difficulty/Completeness)"],
-                    desc = L["Governs how many steps will be skipped. Use 3 for the most completeness, 1 to skip all non-essential steps."],
-                    min = 1, max = 3, step = 1,
-                    get = function(info) return WoWProDB.profile.rank end,
-                    set = function(info,val) WoWProDB.profile.rank = val
-                        if WoWProDB.char.currentguide and WoWProCharDB.Guide[WoWProDB.char.currentguide] then
-                            WoWProCharDB.Guide[WoWProDB.char.currentguide].skipped = {}
-                        end
-                        WoWPro.UpdateGuide("Config: GRank") end,
-                    width = "full"
-                },
-                trank = {
-                    order = 26,
-                    type = "range",
-                    name = L["Toon Rank (Difficulty/Completeness)"],
-                    desc = L["Governs how many steps will be skipped. Use 3 for the most completeness, 1 to skip all non-essential steps."],
-                    min = 1, max = 3, step = 1,
-                    get = function(info) return WoWProCharDB.Rank[1] end,
-                    set = function(info,val) WoWProCharDB.Rank[1] = val
-                        if WoWProDB.char.currentguide and WoWProCharDB.Guide[WoWProDB.char.currentguide] then
-                            WoWProCharDB.Guide[WoWProDB.char.currentguide].skipped = {}
-                        end
-                        WoWPro.UpdateGuide("Config: TRank") end,
-                    width = "full"
-                }
-            }
-        }
-    }}
-    local slot = 51
-    for name, module in WoWPro:IterateModules() do
-        ranks.args[name.."Rank"] = {name=L[name], type="group", order = slot,
-            args = {
-                header = {
-                    order = 10,
-                    type = "header",
-                    name = L[name.." Addon Version Installed"],
-                },
-                version = {
-                    order = 11,
-                    type = "description",
-                    name = L[name .. " Version"]..": "..tostring(module.Version).."\n\n",
-                },
-                header2 = {
-                    order = 13,
-                    type = "header",
-                    name = L["Rank Settings"],
-                },
-                mrank = {
-                    order = 25,
-                    type = "range",
-                    name = L[name.." Rank (Difficulty/Completeness)"],
-                    desc = L["Governs how many steps will be skipped. Use 3 for the most completeness, 1 to skip all non-essential steps."],
-                    min = 1, max = 3, step = 1,
-                    get = function(info) return WoWProDB.profile[name.."rank"] end,
-                    set = function(info,val) WoWProDB.profile[name.."rank"] = val
-                        if WoWProDB.char.currentguide and WoWProCharDB.Guide[WoWProDB.char.currentguide] then
-                            WoWProCharDB.Guide[WoWProDB.char.currentguide].skipped = {}
-                        end
-                        WoWPro.UpdateGuide("Config: mRank") end,
-                    width = "full"
-                },
-            }}
-        slot = slot + 1
-    end
-    WoWPro.rankConfig = ranks
-    return ranks
-end
-
-local function createActionConfig()
-    local actions = {
-        name = L["Actions"],
-        type = "group",
-        args = {
-
-                header = {
-                    order = 10,
-                    type = "header",
-                    name = L["Step Action Description"],
-            }
-        }
-    }
-    WoWPro.InsertActionDescriptions(actions.args, 20)
-    return actions
+    config:RegisterOptionsTable("WoWPro-Expert", expert)
+    dialog:AddToBlizOptions("WoWPro-Expert", expert.name, "WoW-Pro")
 end
 
 function WoWPro.CreateConfig()
-    local topConfig = {
-        name = "Options",
-        type = "group",
-        childGroups = "tab",
-        args = {
-            mainConfig = createMainConfig(),
-            displayConfig = createDisplayConfig(),
-            profileConfig = _G.LibStub("AceDBOptions-3.0"):GetOptionsTable(WoWProDB),
-            rankConfig = createRankConfig(),
-            actionConfig = createActionConfig(),
-            expertConfig = createExpertOptions()
-        }
-    }
-    --  (default = 100, 0=first, -1=last)
-    topConfig.args.mainConfig.order=0
-    topConfig.args.displayConfig.order=10
-    topConfig.args.profileConfig.order=11
-    topConfig.args.rankConfig.order=12
-    topConfig.args.actionConfig.order=13
-    topConfig.args.expertConfig.order=-1
-
-    -- Register your options with AceConfig
-    config:RegisterOptionsTable("WoWPro", topConfig)
-    -- Add the options to the Blizzard Interface Options
-    dialog:AddToBlizOptions("WoWPro", "WoWPro")
+    createBlizzOptions()
+    _G.InterfaceOptions_AddCategory(WoWPro.GuideList)
     _G.InterfaceOptions_AddCategory(WoWPro.CurrentGuideFrame)
 end

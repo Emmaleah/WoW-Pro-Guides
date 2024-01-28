@@ -3,17 +3,17 @@ WoWPro:GuideLevels(guide, 1, 10)
 WoWPro:GuideSort(guide, 7)
 WoWPro:GuideNickname(guide, "Night Elf: Intro")
 WoWPro:GuideName(guide,"Night Elf: Intro")
-WoWPro:GuideNextGuide(guide, 'Darkshore')
+WoWPro:GuideNextGuide(guide, 'Chromie Time')
 WoWPro:GuideSteps(guide, function()
 return [[
-N It's Chromie Time!|QID|62567|M|62.25,29.93|Z|84;Stormwind City|JUMP|Chromie Time|LVL|-60|S!US|N|Congratulations on hitting level 10.\n\nYou can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in.\n\nYou're free to continue your current guide by skipping this and continuing to darkshore, or you click the guide button next to this frame to direct you to Chromie in Stormwind!|CT|
+N It's Chromie Time!|QID|62567|M|62.25,29.93|Z|Stormwind City|JUMP|Chromie Time|LVL|-60|S!US|N|Congratulations on hitting level 10.\n\nYou can now accept Chromie's Call at the Hero's Call board in Stormwind. This will allow you to choose which expansion you want to level in.\n\nYou're free to continue your current guide by skipping this and continuing to darkshore, or you click the guide button next to this frame to direct you to Chromie in Stormwind!|CT|
 A The Balance of Nature|QID|28713|M|45.63,74.55|Z|460;Shadowglen|N|From Ilthalaine.|
 C The Balance of Nature|QID|28713|M|46.71,78.45|Z|460;Shadowglen|N|Kill Young Nightsabers.|
 T The Balance of Nature|QID|28713|M|45.63,74.55|Z|460;Shadowglen|N|To Ilthalaine.|
 A Fel Moss Corruption|QID|28714|PRE|28713|M|45.63,74.55|Z|460;Shadowglen|N|From Ilthalaine.|
 C Fel Moss Corruption|QID|28714|S|M|36.38,78.29|Z|460;Shadowglen|N|Kill and loot Grells.|
 C Fel Moss Corruption|QID|28714|US|M|36.38,78.29|Z|460;Shadowglen|N|Finish killing Grells for Fel Moss.|
-T Fel Moss Corruption|QID|28714|M|45.59,74.50|Z|460;Shadowglen|N|To Ilthalaine.|
+T Fel Moss Corruption|QID|28714|M|46.30,73.50|Z|460;Shadowglen|N|To Ilthalaine.|
 A A Favor for Melithar|QID|28734|PRE|28714|M|46.30,73.50|Z|460;Shadowglen|N|From Ilthalaine.|LEAD|28715|
 T A Favor for Melithar|QID|28734|M|45.95,72.88|Z|460;Shadowglen|N|To Melithar Staghelm.|
 A Demonic Thieves|QID|28715|PRE|28713|M|45.95,72.88|Z|460;Shadowglen|N|From Melithar Staghelm.|
@@ -31,7 +31,7 @@ A Webwood Corruption|QID|28726|PRE|28725|Z|460;Shadowglen|N|From Tarindrella.||
 C Webwood Corruption|QID|28726|M|38.93,6.89|Z|460;Shadowglen|N|Tarindrella will accompany you.|
 T Webwood Corruption|QID|28726|M|PLAYER|Z|460;Shadowglen|N|Tarindrella should still be with you. Turn in to her.|
 A Vile Touch|QID|28727|PRE|28726|M|PLAYER|Z|460;Shadowglen|N|From Tarindrella. She's still with you.|
-C Vile Touch|QID|28727|QO|1|M|44.38,28.48|Z|58;Shadowthread Cave|N|Kill Gilthyiss the Vile.|
+C Vile Touch|QID|28727|QO|1|M|44.38,28.48|Z|460;Shadowglen|N|Kill Gilthyiss the Vile.|
 T Vile Touch|QID|28727|M|PLAYER|Z|460;Shadowglen|N|To Tarindrella. She's still with you.|
 A Signs of Things to Come|QID|28728|PRE|28727|NC|Z|460;Shadowglen|N|From Tarindrella. She'll teleport you back to Dentaria Silverglade.|
 T Signs of Things to Come|QID|28728|M|42.50,50.49|Z|460;Shadowglen|N|To Dentaria Silverglade.|

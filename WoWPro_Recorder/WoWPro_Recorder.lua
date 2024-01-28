@@ -11,7 +11,6 @@ local config = _G.LibStub("AceConfig-3.0")
 local dialog = _G.LibStub("AceConfigDialog-3.0")
 WoWPro.Recorder = WoWPro:NewModule("Recorder")
 WoWPro:Embed(WoWPro.Recorder)
-WoWPro.Recorder.Version = WoWPro.GetAddOnMetadata("WoWPro_Recorder", "Version")
 WoWPro.Recorder.stepInfo = {}
 WoWPro.Recorder.LoadingGuide = false
 WoWPro.Recorder.Advanced = false
@@ -26,6 +25,8 @@ function _G.SlashCmdList.WPR(msg)
 end
 
 function WoWPro.Recorder:OnInitialize()
+-- Creating the config options --
+--  WoWPro.Recorder:CreateConfig()
 end
 
 function WoWPro.Recorder:OnEnable()

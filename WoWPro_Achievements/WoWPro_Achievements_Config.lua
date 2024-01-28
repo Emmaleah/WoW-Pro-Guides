@@ -6,8 +6,11 @@
 
 local L = WoWPro_Locale
 
+local config = _G.LibStub("AceConfig-3.0")
+local dialog = _G.LibStub("AceConfigDialog-3.0")
+
 local function createBlizzOptions()
-    return { name = L["WoW-Pro Achievements"], type = "group", args = {
+    local args = {
         help = {
             order = 0,
             type = "description",
@@ -40,13 +43,33 @@ local function createBlizzOptions()
                 WoWPro.UpdateGuide("Config: Rank") end,
             width = "double"
         },
-    }}
+        blank2 = {
+            order = 4,
+            type = "description",
+            name = " ",
+        },
+        helpheader = {
+            order = 5,
+            type = "header",
+            name = "WoW-Pro Achievements Help",
+        },
+        blank3 = {
+            order = 6,
+            type = "description",
+            name = " ",
+        }
+    }
+    args = WoWPro.InsertActionDescriptions(args, 7)
+    config:RegisterOptionsTable("WoWPro-Achievements-Bliz", {
+        name = "WoW-Pro Achievements",
+        type = "group",
+        args = args})
+    dialog:SetDefaultSize("WoWPro-Achievements-Bliz", 600, 400)
+    dialog:AddToBlizOptions("WoWPro-Achievements-Bliz", "WoW-Pro Achievements")
 end
 
-function WoWPro.Achievements:CreateConfig(args, slot)
-    local achOptions = createBlizzOptions()
-    achOptions.order = slot
-    args.achOptions = achOptions
+function WoWPro.Achievements:CreateConfig()
+    createBlizzOptions()
 
     tinsert(WoWPro.DropdownMenu, {text = "", isTitle = true} )
     tinsert(WoWPro.DropdownMenu, {text = "WoW-Pro Achievements", isTitle = true} )

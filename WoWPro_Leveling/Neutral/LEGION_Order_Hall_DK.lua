@@ -89,24 +89,24 @@ A The Ruined Kingdom|QID|42533|M|50.85,50.52|N|From Highlord Darion Mograine.|PR
 R Dalaran Portal|QID|42533|M|24.67,33.69|N|The Portal is near the flightmaster.|ACTIVE|42533|
 R Graymane Enclave|QID|42533|M|0.00,0.00|Z|Dalaran!Dalaran!Dungeon|N|Take the Ironforge Portal.|ACTIVE|42533|FACTION|ALLIANCE|
 R Windrunner's Sanctuary|QID|42533|M|55.92,22.73|Z|Dalaran!Dalaran!Dungeon|N|Take the Undercity Portal.|ACTIVE|42533|FACTION|HORDE|
-R Stromgarde Keep (Arathi Highlands)|QID|42533|M|19.4,67.2|Z|14; Arathi Highlands|N|Mount up and fly over to Stormguarde Keep to get your other follower.|ACTIVE|43533|
-T The Ruined Kingdom|QID|42533|M|19.45,67.33|Z|14; Arathi Highlands|N|To Prince Galen Trollbane, who is upstairs in the traditional keep commander's room.|
-A Our Oldest Enemies|QID|42534|M|19.45,67.33|Z|14; Arathi Highlands|N|From Prince Galen Trollbane.|PRE|42533|
-A Death... and Decay|QID|42535|M|19.45,67.33|Z|14; Arathi Highlands|N|From Prince Galen Trollbane.|PRE|42533|
-C Death... and Decay|QID|42535|M|17.57,68.01|Z|14; Arathi Highlands|S|NC|N|Defile the Witherbark Supplies as you go.|
-C Our Oldest Enemies|QID|42534|QO|2|M|17.76,65.23|Z|14; Arathi Highlands|S|N|Kill the Witherbark Trolls as you go.|
-C Our Oldest Enemies|QID|42534|QO|1|M|11.83,69.82|Z|14; Arathi Highlands|T|Ojin'ba|N|Kill Ojin'ba.|
-C Our Oldest Enemies|QID|42534|QO|2|M|17.57,68.01|Z|14; Arathi Highlands|US|N|Finish killing the Witherbark Trolls.|
-C Death... and Decay|QID|42535|M|17.57,68.01|Z|14; Arathi Highlands|US|NC|N|Finish defiling the Witherbark Supplies.|
-T Our Oldest Enemies|QID|42534|M|19.45,67.33|Z|14; Arathi Highlands|N|To Prince Galen Trollbane.|
-T Death... and Decay|QID|42535|M|19.45,67.33|Z|14; Arathi Highlands|N|To Prince Galen Trollbane.|
-A Regicide|QID|42536|M|19.53,67.10|Z|14; Arathi Highlands|N|From Thassarian.|PRE|42534&42535|
-C Regicide|QID|42536|M|21.95,59.79|Z|14; Arathi Highlands|T|Prince Galen Trollbane|N|He decided to double cross us, Kill him.|
-T Regicide|QID|42536|M|23.4,61.39|Z|14; Arathi Highlands|N|To Thassarian, who is now down in the crypt.|
-A The King Rises|QID|42537|M|23.4,61.39|Z|14; Arathi Highlands|N|From Thassarian.|PRE|42536|
-C The King Rises|QID|42537|M|22.96,61.39|Z|14; Arathi Highlands|QO|1|NC|N|Click on the grate to open the crypt and enter.|
-C The King Rises|QID|42537|M|22.50,61.37|Z|14; Arathi Highlands|QO|2|NC|N|Stand in front of the coffin and use your extra action button.|
-R Death-Gate|QID|42537|M|22.57,61.37|Z|14; Arathi Highlands|N|Use the provided Death-gate or cast your own.|ACTIVE|42537|
+R Stromgarde Keep (Arathi Highlands)|QID|42533|M|19.4,67.2|Z|Arathi Highlands|N|Mount up and fly over to Stormguarde Keep to get your other follower.|ACTIVE|43533|
+T The Ruined Kingdom|QID|42533|M|19.45,67.33|Z|Arathi Highlands|N|To Prince Galen Trollbane, who is upstairs in the traditional keep commander's room.|
+A Our Oldest Enemies|QID|42534|M|19.45,67.33|Z|Arathi Highlands|N|From Prince Galen Trollbane.|PRE|42533|
+A Death... and Decay|QID|42535|M|19.45,67.33|Z|Arathi Highlands|N|From Prince Galen Trollbane.|PRE|42533|
+C Death... and Decay|QID|42535|M|17.57,68.01|Z|Arathi Highlands|S|NC|N|Defile the Witherbark Supplies as you go.|
+C Our Oldest Enemies|QID|42534|QO|2|M|17.76,65.23|Z|Arathi Highlands|S|N|Kill the Witherbark Trolls as you go.|
+C Our Oldest Enemies|QID|42534|QO|1|M|11.83,69.82|Z|Arathi Highlands|T|Ojin'ba|N|Kill Ojin'ba.|
+C Our Oldest Enemies|QID|42534|QO|2|M|17.57,68.01|Z|Arathi Highlands|US|N|Finish killing the Witherbark Trolls.|
+C Death... and Decay|QID|42535|M|17.57,68.01|Z|Arathi Highlands|US|NC|N|Finish defiling the Witherbark Supplies.|
+T Our Oldest Enemies|QID|42534|M|19.45,67.33|Z|Arathi Highlands|N|To Prince Galen Trollbane.|
+T Death... and Decay|QID|42535|M|19.45,67.33|Z|Arathi Highlands|N|To Prince Galen Trollbane.|
+A Regicide|QID|42536|M|19.53,67.10|Z|Arathi Highlands|N|From Thassarian.|PRE|42534&42535|
+C Regicide|QID|42536|M|21.95,59.79|Z|Arathi Highlands|T|Prince Galen Trollbane|N|He decided to double cross us, Kill him.|
+T Regicide|QID|42536|M|23.4,61.39|Z|Arathi Highlands|N|To Thassarian, who is now down in the crypt.|
+A The King Rises|QID|42537|M|23.4,61.39|Z|Arathi Highlands|N|From Thassarian.|PRE|42536|
+C The King Rises|QID|42537|M|22.96,61.39|Z|Arathi Highlands|QO|1|NC|N|Click on the grate to open the crypt and enter.|
+C The King Rises|QID|42537|M|22.50,61.37|Z|Arathi Highlands|QO|2|NC|N|Stand in front of the coffin and use your extra action button.|
+R Death-Gate|QID|42537|M|22.57,61.37|Z|Arathi Highlands|N|Use the provided Death-gate or cast your own.|ACTIVE|42537|
 T The King Rises|QID|42537|M|50.85,50.52|N|To Highlord Darion Mograine.|
 A Champion: Thoras Trollbane|QID|44243|M|59.71,33.99|N|From King Thoras Trollbane.|PRE|42537|
 A A Personal Request|QID|42708|M|56.05,30.69|N|From Thassarian.|PRE|43539|
@@ -239,15 +239,15 @@ A The Fourth Horseman|QID|43686|M|51.06,50.59|N|From Highlord Darion Mograine.|P
 P Dalaran|QID|43686|M|24.91,33.65|N|Use the Dalaran Portal.|ACTIVE|43686|
 P Undercity|QID|43686|M|55.89,22.88|Z|Dalaran!Dalaran!Dungeon|N|Take the Undercity Portal.|FACTION|HORDE|ACTIVE|43686|
 P Stormwind|QID|43686|M|39.48,63.07|Z|Dalaran!Dalaran!Dungeon|N|Take the Stormwind Portal. The Dalaran Crater Portal from Aegwynn's Gallery is also an option.|FACTION|ALLIANCE|ACTIVE|43686|
-F Light's Hope Chapel|QID|43686|QO|1|M|71.34,48.14|Z|23;Eastern Plaguelands|N|Fly over to Light's Hope Chapel.|ACTIVE|43686|
-C Meet up with Darion|QID|43686|SO|1|M|71.34,48.14|Z|23;Eastern Plaguelands|NC|N|Land and talk to Darion (or just wait a few seconds)|;missed the proper title feel free to change
-C Prepare to attack|QID|43686|SO|2|M|71.34,48.14|Z|23;Eastern Plaguelands|NC|N|Listen to dialog.|;missed the proper title feel free to change
-C Upon the Hill of No Return|QID|43686|SO|3|M|71.34,48.14|Z|23;Eastern Plaguelands|CHAT|N|Talk to Darion Mograine to start things off.|
-C The Dead Shall Rise|QID|43686|SO|4|M|77.85,51.41|Z|23;Eastern Plaguelands|NC|N|Ride into the crypt at Light's Hope Chapel and use the extra action button to raise ghouls at each of the four rooms in the crypt.|
-C The Highlord Awaits|QID|43686|SO|5|M|75.81,52.04|Z|23;Eastern Plaguelands|NC|N|Exit the crypt and go into the chapel to meet Highlord Morgraine.|
-C The Sanctum of Light|QID|43686|SO|6|M|77.13,48.04|Z|23;Eastern Plaguelands|N|Now you get to fight. Head down the stairs into the Sanctum of Light.|
-C Lady of the Light|QID|43686|SO|7|M|78.52,45.75|Z|23;Eastern Plaguelands|N|Fight your way to, and then defeat Lady Liadrin.|
-C An Unholy Fate|QID|43686|SO|8|M|78.90,45.28|Z|23;Eastern Plaguelands|NC|N|Stand of the steps before the coffin and use your extra action button then watch the vignette play out.|
+F Light's Hope Chapel|QID|43686|QO|1|M|71.34,48.14|Z|Eastern Plaguelands|N|Fly over to Light's Hope Chapel.|ACTIVE|43686|
+C Meet up with Darion|QID|43686|SO|1|M|71.34,48.14|Z|Eastern Plaguelands|NC|N|Land and talk to Darion (or just wait a few seconds)|;missed the proper title feel free to change
+C Prepare to attack|QID|43686|SO|2|M|71.34,48.14|Z|Eastern Plaguelands|NC|N|Listen to dialog.|;missed the proper title feel free to change
+C Upon the Hill of No Return|QID|43686|SO|3|M|71.34,48.14|Z|Eastern Plaguelands|CHAT|N|Talk to Darion Mograine to start things off.|
+C The Dead Shall Rise|QID|43686|SO|4|M|77.85,51.41|Z|Eastern Plaguelands|NC|N|Ride into the crypt at Light's Hope Chapel and use the extra action button to raise ghouls at each of the four rooms in the crypt.|
+C The Highlord Awaits|QID|43686|SO|5|M|75.81,52.04|Z|Eastern Plaguelands|NC|N|Exit the crypt and go into the chapel to meet Highlord Morgraine.|
+C The Sanctum of Light|QID|43686|SO|6|M|77.13,48.04|Z|Eastern Plaguelands|N|Now you get to fight. Head down the stairs into the Sanctum of Light.|
+C Lady of the Light|QID|43686|SO|7|M|78.52,45.75|Z|Eastern Plaguelands|N|Fight your way to, and then defeat Lady Liadrin.|
+C An Unholy Fate|QID|43686|SO|8|M|78.90,45.28|Z|Eastern Plaguelands|NC|N|Stand of the steps before the coffin and use your extra action button then watch the vignette play out.|
 C The Fourth Horseman|QID|43686|M|30.36,32.98|NC|N|Watch the vignette and then click on Darion.|
 T The Fourth Horseman|QID|43686|M|30.36,32.98|N|To Highlord Darion Morgraine.|
 t Eye of Azshara: The Frozen Soul|QID|44282|M|58.27,30.86|N|To Amal'thazad.|

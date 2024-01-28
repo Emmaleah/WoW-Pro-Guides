@@ -42,10 +42,10 @@ A Artifact Specific Quest|QID|41919^42501^40847|M|41.44,78.08|N|From one of the 
 A No Sanctuary|QID|42502|M|42.40,76.02|N|From Princess Tess Greymane.|PRE|42501|
 C Finishing the Job|QID|42501|QO|1|M|49.55,82.14|Z|Dalaran@Dalaran70|NC|N|Enter the Chamber of the Guardian.|
 C Finishing the Job|QID|42501|QO|2|M|32.03,71.37|Z|Aegwynn's Gallery@Dalaran70|NC|N|(Optional) Take the Portal to Karazhan.|
-C Finishing the Job|QID|42501|QO|3|M|35.38,25.32|Z|17;Blasted Lands|NC|N|(Optional) Fly to Blasted Lands.|
-C Finishing the Job|QID|42501|QO|4|M|37.03,29.14|Z|17;Blasted Lands|N|Kill Caden Shadowgaze.|T|Caden Shadowgaze|
-C Finishing the Job|QID|42501|QO|5|M|37.03,29.09|Z|17;Blasted Lands|NC|N|Loot the body.|
-T Finishing the Job|QID|42501|M|37.03,29.09|Z|17;Blasted Lands|N|To UI Alert.|
+C Finishing the Job|QID|42501|QO|3|M|35.38,25.32|Z|Blasted Lands|NC|N|(Optional) Fly to Blasted Lands.|
+C Finishing the Job|QID|42501|QO|4|M|37.03,29.14|Z|Blasted Lands|N|Kill Caden Shadowgaze.|T|Caden Shadowgaze|
+C Finishing the Job|QID|42501|QO|5|M|37.03,29.09|Z|Blasted Lands|NC|N|Loot the body.|
+T Finishing the Job|QID|42501|M|37.03,29.09|Z|Blasted Lands|N|To UI Alert.|
 C No Sanctuary|QID|42502|QO|3|M|86.92,73.74|Z|Duskwood|NC|N|(Optional) Fly to Duskwood.|
 C No Sanctuary|QID|42502|QO|4|M|19.06,53.99|Z|Duskwood|N|Up the stairs, first room on the right.|
 C No Sanctuary|QID|42502|QO|5|M|19.06,53.99|Z|Duskwood|NC|N|Loot the body.|
@@ -79,11 +79,11 @@ T The Unseen Blade|QID|42627^42504|M|42.48,74.61|N|Enter your order hall from an
 ;A A Friendly Accord|QID|40847|M|41.19,74.28|N|From Fleet Admiral Tethys.|PRE|42627|
 C A Friendly Accord|QID|40847|QO|1|M|49.55,82.14|Z|Dalaran@Dalaran70|NC|N|(Optional) Enter the Chamber of the Guardian.|
 C A Friendly Accord|QID|40847|QO|2|M|31.83,71.29|Z|Aegwynn's Gallery@Dalaran70|NC|N|(Optional) Take the Portal to Karazhan.|
-C A Friendly Accord|QID|40847|QO|3|M|40.76,69.51|Z|210;The Cape of Stranglethorn|NC|N|(Optional) Fly to Booty Bay.|
-C A Friendly Accord|QID|40847|QO|4|M|39.99,68.39|Z|210;The Cape of Stranglethorn|NC|N|Board the Crimson Veil.|
-T A Friendly Accord|QID|40847|M|40.76,69.11|Z|210;The Cape of Stranglethorn|N|To Fleet Admiral Tethys.|
-A The Dreadblades|QID|40849|M|40.76,69.11|Z|210;The Cape of Stranglethorn|N|From Fleet Admiral Tethys.|PRE|40847|
-C The Dreadblades|QID|40849|QO|1|M|40.76,69.11|Z|210;The Cape of Stranglethorn|N|Tell the Admiral you are ready to set sail.|CHAT|
+C A Friendly Accord|QID|40847|QO|3|M|40.76,69.51|Z|The Cape of Stranglethorn|NC|N|(Optional) Fly to Booty Bay.|
+C A Friendly Accord|QID|40847|QO|4|M|39.99,68.39|Z|The Cape of Stranglethorn|NC|N|Board the Crimson Veil.|
+T A Friendly Accord|QID|40847|M|40.76,69.11|Z|The Cape of Stranglethorn|N|To Fleet Admiral Tethys.|
+A The Dreadblades|QID|40849|M|40.76,69.11|Z|The Cape of Stranglethorn|N|From Fleet Admiral Tethys.|PRE|40847|
+C The Dreadblades|QID|40849|QO|1|M|40.76,69.11|Z|The Cape of Stranglethorn|N|Tell the Admiral you are ready to set sail.|CHAT|
 C Maritime Diplomacy|SO|1|M|61.16,68.79|Z|Azsuna|N|As you are running across the landing area, be aware of stealthed explosive traps. Board the ship on the other side of the beach and attack First Mate DeGauza.  Be aware of the radias marks for the bombs going off during the fight.|QID|40849|
 C Find the Dread Admiral Eliza|SO|2;1|M|57.02,66.63|Z|Azsuna|N|Find the Dread Admiral Eliza|QID|40849|
 C Defeat Lord Brinebeard|SO|3;1|M|56.38,67.22|Z|Azsuna|N|Defeat Lord Brinebeard|QID|40849|
@@ -494,7 +494,7 @@ T Dread Infiltrators|QID|46103|M|19.45,21.22|N|To Lilian Voss.|FACTION|ALLIANCE|
 A Hiding In Plain Sight|QID|46089|M|19.45,21.22|N|From Lilian Voss.|PRE|46103|FACTION|ALLIANCE|
 C Hiding In Plain Sight|QID|46089|M|19.45,21.22|QO|1|NC|N|Wait and listen to Lilian's plan.|FACTION|ALLIANCE|
 R Dalaran Crater|QID|46089|QO|1|N|Travel by your choice of method to Silvermoon. I think the most direct is the Portal in Dalaran's Chamber of the Guardian to the Dalaran Crater and then fly from there.|FACTION|ALLIANCE|ACTIVE|46089|
-R Thalassian Pass|QID|46089|QO|2|M|54.51,8.67|Z|23;Eastern Plaguelands|N|Fly across Western and Eastern Plaguelands to Thalassian Pass.|FACTION|ALLIANCE|ACTIVE|46089|
+R Thalassian Pass|QID|46089|QO|2|M|54.51,8.67|Z|Eastern Plaguelands|N|Fly across Western and Eastern Plaguelands to Thalassian Pass.|FACTION|ALLIANCE|ACTIVE|46089|
 R Walk of Elders|QID|46089|QO|2|M|73.89,80.31|Z|Silvermoon City|N|Run thru Ghostlands and Eversong Woods to Silvermoon City. Presumably you want to stealth once you get close to the city gates. The arcane guardian just inside the gates sees thru stealth.|FACTION|ALLIANCE|ACTIVE|46089|
 C Hiding In Plain Sight|QID|46089|M|75.63,74.47|Z|Silvermoon City|QO|2|T|Tercin Shivenllher|N|The Silvermoon Mark, Tercin Shivenllher, paths clockwise around the Walk of Elders, There is a star on you map where he currently is.  Blind the Arcane Demolisher to keep him occupied. Lacking blind, distract works, but not for as long. Tercin will call for help from nearby guards.|FACTION|ALLIANCE|
 P Krasus' Landing|QID|46089|QO|2|U|140192|N|Hearth to Dalaran and use Chamber of the Guardians portal back to Dalaran Crater and fly from there.|FACTION|ALLIANCE|ACTIVE|46089|
@@ -514,17 +514,17 @@ C Hiding In Plain Sight|QID|46178|M|19.45,21.22|QO|1|NC|N|Wait and listen to Lil
 P Orgrimmar|QID|46178|M|55.28,23.99|Z|Dalaran@Dalaran70|QO|1|N|Use portal in Windrunner's Sanctuary to travel to Orgrimmar.|FACTION|HORDE|ACTIVE|46178|
 P Mt Hyjal|QID|46178|M|51.11,38.29|Z|Orgrimmar@Orgrimmar|QO|1|N|Use portal to Mt Hyjal in Orgrimmar.|FACTION|HORDE|ACTIVE|46178|
 R Teldrasil|QID|46178|QO|2|M|52.34,89.46|Z|Teldrassil|N|Fly to Teldrasil to catch a boat to Azuremyst Isle.|FACTION|HORDE|ACTIVE|46178|
-R The Exodar|QID|46178|QO|2|M|41.63,73.59|Z|103; The Exodar|N|Wind your way down into The Vault of Lights in The Exodar and find the mark, Ardann the Solemn.|FACTION|HORDE|ACTIVE|46178|
-C Hiding In Plain Sight|QID|46178|M|39.45,61.78|Z|103; The Exodar|QO|2|T|Ardann the Solemn|N|Look for the star on your map, he paths counter clockwise around the edge of the area marked on the map. It's a pretty long patrol, so you may need to wait a few minutes (or if impatient, go find him.) Find a good place to fight and blind (or distract) the Crystalforged Demolisher that is walking with Ardaan and then kill Ardaan. Vanish and run back outside.|FACTION|HORDE|
-R Azuremyst Isle|QID|46178|M|35.02,74.67|Z|103; The Exodar|QO|2|N|Run back up the tunnel and outside.|FACTION|HORDE|ACTIVE|46178|
-R The Veiled Sea|QID|46178|QO|2|M|21.59,54.10|Z|97 ;Azuremyst Isle|N|Catch the boat back to Darnassus.|FACTION|HORDE|ACTIVE|46178|
+R The Exodar|QID|46178|QO|2|M|41.63,73.59|Z|The Exodar|N|Wind your way down into The Vault of Lights in The Exodar and find the mark, Ardann the Solemn.|FACTION|HORDE|ACTIVE|46178|
+C Hiding In Plain Sight|QID|46178|M|39.45,61.78|Z|The Exodar|QO|2|T|Ardann the Solemn|N|Look for the star on your map, he paths counter clockwise around the edge of the area marked on the map. It's a pretty long patrol, so you may need to wait a few minutes (or if impatient, go find him.) Find a good place to fight and blind (or distract) the Crystalforged Demolisher that is walking with Ardaan and then kill Ardaan. Vanish and run back outside.|FACTION|HORDE|
+R Azuremyst Isle|QID|46178|M|35.02,74.67|Z|The Exodar|QO|2|N|Run back up the tunnel and outside.|FACTION|HORDE|ACTIVE|46178|
+R The Veiled Sea|QID|46178|QO|2|M|21.59,54.10|Z|Azuremyst Isle|N|Catch the boat back to Darnassus.|FACTION|HORDE|ACTIVE|46178|
 C Hiding In Plain Sight|QID|46178|QO|3|M|68.38,45.63|Z|Darnassus|T|Taylenne Sweetsong|N|Take the portal into Darnassus or fly over the walls. Tylene is near the back gate. Don't fight Taylene when the elite npcs are close as they do MASSIVE damage. Remember Cry for Help is interruptible, Sap the nearest elite, kill the mark and vanish if you want to live.|FACTION|HORDE|
 P Krasus' Landing|QID|46178|QO|3|U|140192|N|Hearth to Dalaran and use Windrunner's Sanctuary portal back to Orgrimmar and fly up to the Cataclysm Portal circle.|FACTION|HORDE|ACTIVE|46178|
 P Orgrimmar|QID|46178|QO|3|M|55.28,23.99|Z|Dalaran@Dalaran70|N|Run to Windrunner's Sactuary and use the portal to Orgrimmar.|FACTION|HORDE|ACTIVE|46178|
 P Twilight Highlands|QID|46178|QO|3|M|50.22,39.47|Z|Orgrimmar@Orgrimmar|N|Use the Twilight Highlands portal and fly from there.|FACTION|HORDE|ACTIVE|46178|
-R Ironforge|QID|46178|QO|3|Z|27;Dun Morogh|M|60,33|N|The next Mark is in Ironforge.|FACTION|HORDE|ACTIVE|46178|
-C Hiding In Plain Sight|QID|46178|M|42.84,50.11|Z|48; Loch Modan|QO|4|T|Corin Twinbellows|N|Stealth into 'The High Seat' area. Wait for Corin to be relatively alone, pick pocket Corin and use his key to remove his armor buff, then kill him.|U|144357|FACTION|HORDE|
-R Deeprun Tram|QID|46178|M|73.06,50.30|Z|48; Loch Modan|N|Take the Deeprun Tram to Stormwind.|FACTION|HORDE|ACTIVE|46178|
+R Ironforge|QID|46178|QO|3|Z|Dun Morogh|M|60,33|N|The next Mark is in Ironforge.|FACTION|HORDE|ACTIVE|46178|
+C Hiding In Plain Sight|QID|46178|M|42.84,50.11|Z|Ironforge|QO|4|T|Corin Twinbellows|N|Stealth into 'The High Seat' area. Wait for Corin to be relatively alone, pick pocket Corin and use his key to remove his armor buff, then kill him.|U|144357|FACTION|HORDE|
+R Deeprun Tram|QID|46178|M|73.06,50.30|Z|Ironforge|N|Take the Deeprun Tram to Stormwind.|FACTION|HORDE|ACTIVE|46178|
 C Hiding In Plain Sight|QID|46178|QO|5|M|61.39,70.44|Z|Stormwind City|T|Auctioneer Jaxon|N|The final Mark, Auctioneer Jaxon can be found inside the auction house on the right side.|FACTION|HORDE|
 
 P P Krasus' Landing|QID|46178^46089|U|140192|N|Hearth to Dalaran and return to your guild hall.|ACTIVE|46178^46089|

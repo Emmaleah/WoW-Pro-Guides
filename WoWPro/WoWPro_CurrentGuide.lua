@@ -12,7 +12,7 @@ local title, subtitle
 
 local frame = _G.CreateFrame("Frame", nil, _G.InterfaceOptionsFramePanelContainer)
 frame.name = L["Current Guide"]
-frame.parent = "WoWPro"
+frame.parent = "WoW-Pro"
 frame:Hide()
 WoWPro.CurrentGuideFrame = frame
 

@@ -6,7 +6,6 @@
 
 WoWPro.Leveling = WoWPro:NewModule("Leveling")
 WoWPro:Embed(WoWPro.Leveling)
-WoWPro.Leveling.Version = WoWPro.GetAddOnMetadata("WoWPro_Leveling", "Version")
 
 WoWPro.Leveling.StartGuides = {
     Orc = "JiyDur0105",
@@ -41,10 +40,10 @@ WoWPro.Leveling.ClassicStartGuides = {
     Gnome = 'ClassicDunMorogh0112',
     Human = 'ClassicElwynn0112',
     NightElf = "ClassicTeldrassil0112",
-    Orc = 'Classic-01-12-Hendo-Durotar',
-    Scourge = 'Classic-01-12-Hendo-TirisfalGlades',
-    Tauren = 'Classic-01-12-Hendo-Mulgore',
-    Troll = 'Classic-01-12-Hendo-Durotar'
+    Orc = 'Classic-01-12-Zerinj-Durotar',
+    Scourge = 'Classic-01-12-Manovan-TirisfalGlades',
+    Tauren = 'Classic-01-12-Shururu-Mulgore',
+    Troll = 'Classic-01-12-Zerinj-Durotar'
 }
 WoWPro.Leveling.ClassicBCStartGuides = {
     BloodElf = "BC-BloodElf",
@@ -84,6 +83,7 @@ function WoWPro.Leveling:OnEnable()
 
     --Loading Frames--
     if not WoWPro.Leveling.FramesLoaded then --First time the addon has been enabled since UI Load
+        WoWPro.Leveling:CreateConfig()
         WoWPro.Leveling.FramesLoaded = true
     end
 

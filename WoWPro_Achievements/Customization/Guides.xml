@@ -1,4 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-	<Script file="Dark_Ranger.lua"/>
-	<Script file="Manari_Eredar_Customization.lua"/>
-</Ui>

@@ -6,7 +6,6 @@
 
 WoWPro.Achievements = WoWPro:NewModule("Achievements")
 WoWPro:Embed(WoWPro.Achievements)
-WoWPro.Achievements.Version = WoWPro.GetAddOnMetadata("WoWPro_Achievements", "Version")
 
 -- Called before all addons have loaded, but after saved variables have loaded. --
 function WoWPro.Achievements:OnInitialize()
@@ -20,6 +19,7 @@ function WoWPro.Achievements:OnEnable()
 
     --Loading Frames--
     if not WoWPro.Achievements.FramesLoaded then --First time the addon has been enabled since UI Load
+        WoWPro.Achievements:CreateConfig()
         -- WoWPro.Achievements.CreateGuideList()
         WoWPro.Achievements.FramesLoaded = true
     end
